@@ -74,19 +74,20 @@
         <div class="d-flex flex-column bd-highlight mb-3">
           <div class="p-2 bd-highlight">
             <div class="d-flex justify-content-between" style="margin-right: 2rem; margin-left: 2rem; margin-top: 2rem;">
-              <h4 class="p-2">Line Chart</h4>
-          <div class="btn-group" role="group" aria-label="Basic radio button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="">
-            <label class="btn btn-outline-primary" for="btnradio1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+              <h4 id="lbl1" class="p-2 lbl-chartbox lbl-toggle">Line Chart</h4>
+              <h4 id="lbl2" class="p-2 lbl-chartbox lbl-toggle" style="display: none;">Candle Chart</h4>
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary image-toggler btn-outline-primary active" data-image-id="#image1" data-label-id="#lbl1">
+    <input type="radio" name="options" id="option1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z"></path>
-</svg></label>
-
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+</svg>
+  </label>
+  <label class="btn btn-primary image-toggler btn-outline-primary" data-image-id="#image2" data-label-id="#lbl2">
+    <input type="radio" name="options" id="option2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
   <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
-</svg></label>
-          </div>
+</svg>
+  </label>
+</div>
             </div>
         
           <div class="d-flex justify-content-between" style="margin-right: 2rem; margin-left: 2rem; margin-top: 2rem;">
@@ -127,7 +128,10 @@
 
       
           </div>
-          <div class="p-2 bd-highlight"><img src="img/chartcapture.png" class="img-fluid" width="100%" style="padding-right: 2rem; padding-left: 2rem; "></div>
+          <div class="p-2 bd-highlight">
+            <img src="img/img-chart-line.png" id="image1" class="img-fluid image-toggle" width="100%" style="padding-right: 2rem; padding-left: 2rem; ">
+           <img src="img/img-chart-candlestick.png" id="image2" class="img-fluid image-toggle" width="100%" style="padding-right: 2rem; padding-left: 2rem; display: none; ">
+          </div>
           <div class="p-2 bd-highlight">
             <div class="row margin-cap">
   <div class="col-md-4 col-sm-12 pb-sm-chart">
@@ -252,7 +256,7 @@
 <div class="row d-flex justify-content-between">
     <div class="d-flex bd-highlight mb-2">
   <div class=""><img src="img/icons-8-reading.svg" class="icons8-news"></div>
-  <div class="p-2 bd-highlight mx-4"><h2> Crypto News</h2></div>
+  <div class="p-2 bd-highlight mx-4"><h2>Triv Blog</h2></div>
   
 </div>
 </div>
@@ -415,7 +419,7 @@
 
         <div class="card-bod pd-card-pricedetail">
           <h4 class="card-title">Find Any Mistakes?</h4><br>
-          <a href="" class="mbs-2 custom-link">Tell us about them</a>
+          <a href="mailto:help@triv.co.id" class="mbs-2 custom-link">Tell us about them</a>
         </div>
       </div>
       <!-- End of BLock TellUs -->
@@ -645,6 +649,15 @@ $(function ($) {
         $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     })
 });
+</script>
+<script type="text/javascript">
+  $('.image-toggler').click(function(){
+    $('.image-toggle').hide();
+    $('.lbl-toggle').hide();
+    $($(this).attr('data-image-id')).show();
+     $($(this).attr('data-label-id')).show();
+   
+  });
 </script>
 <script type="text/javascript">
   /*******************************
