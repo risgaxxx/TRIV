@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="33" viewBox="0 0 74 33">
+    <defs>
+        <linearGradient id="ehdy2feoba" x1="111.685%" x2="-14.677%" y1="40.831%" y2="59.169%">
+            <stop offset="0%" stop-color="#FF6D87"/>
+            <stop offset="100%" stop-color="#613F47"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g stroke="url(#ehdy2feoba)" stroke-width="2" transform="translate(-930.000000, -911.000000)">
+            <path d="M931.38 921.57c5.683 7.504 7.989 8.834 12.024.735 4.035-8.1 4.271 7.53 9.191 15.56 4.92 8.031 7.576-1.89 10.617 0 3.041 1.89 12.356 6.964 16.94 4.518 4.583-2.446 6.948-24.581 11.614-27.449 3.111-1.912 6.856-2.756 11.234-2.533" transform="translate(967.189814, 927.701032) scale(1, -1) translate(-967.189814, -927.701032)"/>
+        </g>
+    </g>
+</svg>
