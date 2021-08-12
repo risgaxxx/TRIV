@@ -1,0 +1,928 @@
+/**** Custom Style RPJ Dev *****/
+
+@font-face {
+    font-family: Avenir;
+    src: url(../font/Metropolis-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/****** Site Triv ****/
+.header {
+    background-color: #fff;
+    height: 110px;
+    width: 100%;
+    color: #676767;
+    z-index: 9999;
+    border-bottom: 1px solid #d6d6d6;
+    transition: all 0.4s ease;
+    }
+.top-login-area {
+    width: 100%;
+    height: 45px;
+    background: #202020;
+}
+.login-area {
+    position: relative;
+    float: right;
+    right: 0px;
+    top: 10px;
+}
+ul.login-area-nav {
+    list-style: none;
+}
+.login-area-nav li {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 10px;
+    padding-right: 25px;
+    border-right: 1px solid #424242;
+}
+.login-area-nav li a {
+    color: #fff;
+}
+.main-menu {
+    width: 100%;
+    height: 66px;
+    background: #252525;
+}
+
+.header_logo {
+    visibility: visible;
+    position: absolute;
+    background: url(/assets/logo_triv-54152242c2fd819798779668b81718be794a66d96ed1a8298d677f0e94e1d806.png) no-repeat;
+    background-size: 157px 51px;
+    width: 157px;
+    height: 51px;
+    margin: 6px 0 10px 5px;
+    z-index: 9999;
+}
+
+#main_menu {
+    width: auto;
+    line-height: 1;
+    margin-top: 22px;
+    }
+ #main_menu, #main_menu ul, #main_menu ul li, #main_menu ul li a, #main_menu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#main_menu #menu-button {
+    display: none;
+}
+
+#main_menu, #main_menu ul, #main_menu ul li, #main_menu ul li a, #main_menu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#main_menu ul {
+    float: right;
+
+}
+
+#main_menu, #main_menu ul, #main_menu ul li, #main_menu ul li a, #main_menu #menu-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#main_menu ul ul li a {
+    padding: 10px;
+    width: 160px;
+    text-align: left;
+    font-size: 15px;
+    background: #252525;
+    text-decoration: none;
+    color: #dddddd;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+    }
+
+    #main_menu ul ul ul {
+        margin-left: 100%;
+        }
+
+        #main_menu ul ul ul {
+            top: 0;
+            padding-top: 0;
+            }
+            #main_menu ul ul {
+                position: absolute;
+                left: -9999px;
+                padding-top: 25px;
+                }
+
+#main_menu>ul>li.has-sub>a {
+    padding-right: 10px;
+    }
+
+#main_menu>ul>li {
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+    }
+#main_menu>ul>li {
+        float: left;
+}
+
+
+/***** Container & Layout Style ****/
+.bg-triv-darker {
+    border-radius: 3px;
+    background-color: #1a1a1a;
+    border-style: none;
+}
+.container-centered {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card-higlight-price {
+    height: auto !important;
+    border-radius: 3px;
+    background-color: #252525;
+}
+.card-media{
+    border-radius: 10px;
+    background-color: #212734;
+}
+
+.card-media .card-body span.title{
+    font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.card-media .wrapper-media img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tagline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent !important;
+    border: none;
+}
+.bg-triv-transparent {
+    border-radius: 3px;
+    background-color: transparent;
+    border-style: none;
+}
+
+.wrapper-media{
+	position:relative;
+	width:auto;
+}
+
+.wrapper-media img {
+	max-width:100%;
+	height:auto;
+}
+
+.wrapper-media iframe {
+	display:none;
+}
+
+.play-btn {
+	position:absolute;
+	z-index:666;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background-color:transparent;
+	border:0;
+}
+
+.play-btn:hover {
+	cursor:pointer;
+}
+
+.wrapper-media #times{
+    width: 88px;
+    height: 23px;
+    padding: 0px;
+    position:absolute;
+	z-index:666;
+	top:90%;
+	left:15%;
+	transform:translate(-50%, -50%);
+	background-color:transparent;
+	border:0;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 4px;
+    background-color: #737aff;
+    color: #ffffff;
+  
+}
+
+.play-btn:focus {
+	outline:0;
+}
+
+
+/***** Spacing Style ****/
+.padding-subscribe {
+    padding: 10rem 4rem 10rem 4rem;
+}
+.mts-5 {
+    margin-top: 5%;
+}
+.mbs-2 {
+    margin-bottom: 2%;
+}
+hr.style12 {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(45, 52, 90, 0), #596493 50%, rgba(45, 52, 90, 0));
+}
+
+/***** Text Style ****/
+.title-stake-taglist{
+    font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.yield-text-positive{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #75e0a2;
+}
+.lokup-changes{
+    font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #eb8b30;
+}
+.headlineDashboard{
+font-family: MontserratAlternates;
+font-size: 31px;
+font-weight: 100;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: var(--white);
+}
+.Watch-Staking-Video {
+   
+   
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #737aff;
+  }
+.text-muted {
+    color: #777;
+}
+span.default{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #9ca7be;
+}
+img.stake-has-info-table{
+    margin: 12px 24px 12px 38px;
+  object-fit: contain;
+}
+.sectiontagline-title {
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #009ae1;
+}
+.sectiontagline-text {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.sectiontagline-description {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    color: #9ca7be;
+}
+.title-chart {
+    color: #75e0a2;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    text-align: right;
+}
+
+.title-price {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+}
+.card-title {
+    margin-bottom: .5rem;
+}
+.text-left {
+    text-align: left;
+}
+.main-text-color {
+    color: #009ae1!important;
+}
+
+.text-light {
+    color: #9ca7be!important;
+}
+.desc-title-stake {
+    font-size: 12px;
+}
+.title-highlight-price {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+}
+
+.value-highlight-price {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    color: #9ca7be;
+}
+
+/***** Button Style ****/
+.btn-primary-outline {
+    border-radius: 30px;
+    border: solid 1px #737aff;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+}
+.btn-danger-outline {
+    border-radius: 30px;
+    border: solid 1px #ff6d87;
+    font-size: 14px;
+    color: #ff6d87;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: #737AFF;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+
+
+
+/***** Image & Icon ****/
+.icon-dashboard:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_nav_dashboard.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.icon-qt:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_nav_transaksicepat.png);
+    background-size: 20px 9x;
+    display: inline-block;
+    width: 20px;
+    height: 9px;
+    vertical-align: middle;
+}
+.icon-star:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_nav_reguler.png);
+    background-size: 14px 14x;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-notification-new:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_nav_notif.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.icon-buy-sell:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_belijual.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-swap:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_swap.png);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-pulsa:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_pulsatoken.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-loan:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_gadaikripto.png);
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.icon-marketplace:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_marketplace.png);
+    background-size: 14px 9px;
+    display: inline-block;
+    width: 14px;
+    height: 9px;
+    vertical-align: middle;
+}
+.icon-affiliate:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_afiliasi.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-wallet:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_dompet.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-statement:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_dashboard.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-point-reward:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_seidenav_poinreward.png);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-liverate:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_liverat.svg);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-support:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_sidenav_bantuan.png);
+    background-size: 14px 14px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.icon-stake:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_stake_button_table_stake.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.icon-unstake:before {
+    content: "";
+    background-image: url(../img/stake_dashboard/ic_stake_button_table_unstake.svg);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+img.play {
+    margin-left: 5px;
+  }
+img.ic_search_tabe_stake{
+    margin: 0px 0px 0px 10px;
+  object-fit: contain;
+}
+.Group-3-Copy {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 0 0;
+    object-fit: contain;
+}
+.Triangle-Copy {
+    width: 12px;
+    height: 6px;
+    object-fit: contain;
+    border-radius: 1px;
+}
+.Path-6-Copy {
+    width: 85.7px;
+    height: 20px;
+    object-fit: contain;
+}
+img.stake-ethereum-icon{
+  
+       
+        object-fit: contain;
+      
+}
+img.icon_stake_dashboard_card_icon {
+    width: 32px;
+    height: auto;
+    margin-top: 1rem;
+    object-fit: contain;
+}
+
+/***** Custom Style ****/
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-pills > li {
+    float: left;
+}
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+.nav-pills > li > a {
+    border-radius: 4px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #9ca7be;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-dark-custom {
+    --bs-table-bg: #212529;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border: none;
+}
+.table-header-color {
+    --bs-table-bg: #1a1a1a;
+    --bs-table-striped-bg: #ecedee;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfe0e1;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5e6e7;
+    --bs-table-hover-color: #000;
+}
+
+.table > caption + thead > tr:first-child > td, .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table > thead:first-child > tr:first-child > th {
+    border-top: 0;
+}
+
+table.table-pricelist > thead > tr > td {
+    height: 90px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom: 1px solid #242e37;
+}
+
+.table-pricelist > tbody > tr > td {
+    justify-content: middle;
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ca7be;
+}
+
+.Group-3-Copy-2 {
+    width: 45px;
+    height: 45px;
+    margin: 5px 20px 10px 20px;
+    object-fit: contain;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.form-inline .form-group {
+    display: block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-control[type="email-subscribe"] {
+    width: 50%;
+    float: left;
+}
+
+.form-control-subscribtion {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 15px 0 18px 25px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: rgba(0, 154, 225, 0.1);
+    background-image: none;
+    border: solid 0.5px #009ae1;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+button.subscribe {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+thead.header-tablestake{
+  padding: 15px 35px 15px 15px;
+  border-top-left-radius: 11px;
+  border-top-left-radius: 11px;
+  background-color: #2d3649;
+
+}
+.table-dark-custom tbody tr td{
+    background-color: #252c3a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+.table-dark-custom tbody tr {
+  
+   border-bottom: solid 1px #343c4a;
+
+}
+.table-dark-custom tbody tr:hover td{
+    background-color: #212836;
+}
+.table-dark-custom tbody tr:last-child  {
+  
+    border-bottom: none !important;
+ 
+ }
+
+table .table-pricelist { border-collapse: separate; }
+thead.header-tablestake tr:first-child td:first-child { border-top-left-radius: 10px; }
+thead.header-tablestake tr:first-child td:last-child { border-top-right-radius: 10px; }
+tbody.table-stake tr:last-child td:first-child { border-bottom-left-radius: 10px;}
+tbody.table-stake tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+tbody.table-stake tr:last-child td:last-child {
+    border: transparent;
+}
+thead.header-tablestake{
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+  
+}
+.table-pricelist-search {
+    background-color: #242e37;
+    max-width: 70%;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 6px 2px 6px 2px;
+}
+table .table-pricelist .table-stake tr td {
+    padding-top:10rem;
+}
+.table-pricelist-search-stake {
+    background-color: #242e37;
+    max-width: 300px;
+    border-radius: 10px;
+}
+.table-stake td:first-child {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    padding-left: 20px;
+  
+}
+
+
+.table-stake td:first-child span.table-stake-subcryotpstake{
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ca7be;
+}
+input.transparent-input {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.list-group-item-transparent {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+}
+
+.tooltip.primary .tooltip-inner          { background-color:    #344057 }
+.tooltip.primary.top > .tooltip-arrow    { border-top-color:    #344057;background-color: #344057; border-radius: 10px; }
+.tooltip.primary.right > .tooltip-arrow  { border-right-color:  #344057; }
+.tooltip.primary.bottom > .tooltip-arrow { border-bottom-color: #344057;  }
+.tooltip.primary.left > .tooltip-arrow   { border-left-color:   #344057; }
