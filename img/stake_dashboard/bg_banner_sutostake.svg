@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="987" height="310" viewBox="0 0 987 310">
+    <defs>
+        <radialGradient id="w7gkyl0g5c" cx="38.349%" cy="38.511%" r="55.181%" fx="38.349%" fy="38.511%" gradientTransform="translate(0.383495,0.385110),scale(0.647191,1.000000),rotate(28.430879),translate(-0.383495,-0.385110)">
+            <stop offset="0%" stop-color="#2F394A"/>
+            <stop offset="100%" stop-color="#252C3A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="uibh9f1jrd" cx="71.856%" cy="69.357%" r="107.695%" fx="71.856%" fy="69.357%" gradientTransform="translate(0.718558,0.693573),scale(0.516721,1.000000),rotate(-148.513845),translate(-0.718558,-0.693573)">
+            <stop offset="0%" stop-color="#28354D"/>
+            <stop offset="100%" stop-color="#252C3A" stop-opacity="0"/>
+        </radialGradient>
+        <rect id="gpsxgfydya" width="987" height="310" x="0" y="0" rx="11"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-321.000000, -2238.000000) translate(321.000000, 2238.000000)">
+                <mask id="63h2z4cbzb" fill="#fff">
+                    <use xlink:href="#gpsxgfydya"/>
+                </mask>
+                <use fill="#202632" xlink:href="#gpsxgfydya"/>
+                <g mask="url(#63h2z4cbzb)" opacity=".498">
+                    <g>
+                        <path fill="url(#w7gkyl0g5c)" d="M0 0L890 0 890 576z" transform="translate(-411.000000, -9.000000) translate(445.000000, 288.000000) scale(-1, 1) translate(-445.000000, -288.000000)"/>
+                        <path fill="url(#uibh9f1jrd)" d="M187 224L1114 224 1114 703z" transform="translate(-411.000000, -9.000000) translate(650.500000, 463.500000) scale(-1, -1) rotate(90.000000) translate(-650.500000, -463.500000)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

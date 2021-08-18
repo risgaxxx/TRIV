@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <title>Triv | Stake ETH2</title>
+  <meta content="Triv" name="description" />
+  <meta content="origin-when-crossorigin" name="referrer" />
+
+
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link rel="stylesheet" media="all" href="css/trivorigin/bootstrap-triv.css" data-turbolinks-track="reload" />
+  <link rel="stylesheet" media="all" href="css/trivorigin/custom-triv.css" data-turbolinks-track="reload" />
+  <link rel="stylesheet" media="all" href="css/styletriv.css" data-turbolinks-track="reload" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navigation navbar navbar-expand-lg">
+      <div class="navigation-button">
+        <button class="hide-tablet show-mobile sidebar-toggler"><i class="icon-burger-menu"></i></button>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+          <span class="icon-more"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link dashboard"><i class="icon-dashboard"></i> Selamat Datang, yuza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link qt-button link-to-menu" href="/dashboard/quick-transact"><i class="icon-qt"></i>Transaksi
+              Cepat</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link vip" href="#"><i class="icon-star"></i>Regular</a>
+          </li>
+        </ul>
+      </div>
+      <div class="notification-icon"><i class="icon-notification-new" id="icon_type"></i></div>
+      <div class="dropdown user-dropdown">
+        <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" id="userDropdown" title="yuza test"><img
+            width="36px" src="img/stake_dashboard/ic_nav_usericon.svg" /></a>
+        <div aria-labelledby="userDropdown" class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item active" href="/dashboard"><i class="icon-dashboard"></i>Dasbor</a><a
+            class="dropdown-item" href="/dashboard/settings"><i class="icon-profile"></i>Profil</a>
+          <a class="dropdown-item change-language" href="/en/dashboard"><i class="icon-america"></i>Ganti Bahasa</a><a
+            class="dropdown-item" rel="nofollow" data-method="delete" href="/logout"><i
+              class="icon-logout"></i>Keluar</a>
+        </div>
+      </div>
+    </nav>
+    <aside class="sidebar hide-menu">
+      <div class="brand-section">
+        <a class="brand" style="color: inherit; text-decoration: none;" href="/dashboard"><img width="75px"
+            src="img/stake_dashboard/logo_triv_bluewhite.png" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/buy-sell">
+            <li class="link_to_buy_0 link-to-menu"><i class="icon-buy-sell"></i> Beli / Jual</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/coin/swap">
+            <li class="link-to-menu"><i class="icon-swap"></i> Swap</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/product">
+            <li class="link_to_topup link-to-menu"><i class="icon-pulsa"></i> Pulsa. Token</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/loans">
+            <li class="link-to-menu"><i class="icon-loan"></i> Gadai Kripto<span class="badge new-feature">NEW</span>
+            </li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" target="_blank" href="/dashboard/redirect/tpro-market">
+            <li class="link_to_marketplace"><i class="icon-marketplace"></i> Marketplace</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/affiliate">
+            <li class="link_to_affiliate link-to-menu"><i class="icon-affiliate"></i> Affiliasi</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/wallet">
+            <li class="link_to_wallet link-to-menu"><i class="icon-wallet"></i> Dompet</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/statement">
+            <li class="link_to_statement link-to-menu"><i class="icon-statement"></i> Riwayat</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/dashboard/point-reward">
+            <li class="link_to_statement link-to-menu"><i class="icon-point-reward"></i> Point Reward<span
+                class="badge new-feature">NEW</span></li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/liverate">
+            <li class="link_to_liverate link-to-menu"><i class="icon-liverate"></i> Live Rate</li>
+          </a>
+          <a style="color: inherit; text-decoration: none;" href="/support">
+            <li class="link_to_support link-to-menu"><i class="icon-support"></i> Bantuan</li>
+          </a>
+          <div class="Line-2" style="width: 150px;"></div>
+          <p class="follow-us">Follow Us</p>
+          <a target="_blank" style="color: inherit; text-decoration: none;"
+            href="https://www.facebook.com/TrivIndonesia/">
+            <img alt="Follow Us on Facebook" class="follow-us-soci" src="img/stake_dashboard/ic_sidenav_fb.png" />
+          </a>
+          <a target="_blank" style="color: inherit; text-decoration: none;" href="https://www.instagram.com/trivindo/">
+            <img alt="Follow Us on Instagram" class="follow-us-soci" src="img/stake_dashboard/ic_sidenav_ig.png" />
+          </a>
+          <a target="_blank" style="color: inherit; text-decoration: none;" href="https://www.tiktok.com/@triv.co.id/">
+            <img alt="Follow Us on TikTok" class="follow-us-soci" src="img/stake_dashboard/ic_sidenav_titok.png" />
+          </a>
+          <a target="_blank" style="color: inherit; text-decoration: none;" href="https://twitter.com/trivindonesia/">
+            <img alt="Follow Us on Twitter" class="follow-us-soci" src="img/stake_dashboard/ic_sidenav_twitter.png" />
+          </a>
+          <a target="_blank" style="color: inherit; text-decoration: none;"
+            href="https://www.youtube.com/channel/UCoZGlpqQU1Cfwn6j26UE9vQ">
+            <img alt="Follow Us on YouTube" class="follow-us-soci" src="img/stake_dashboard/ic_sidenav_yutube.png" />
+          </a>
+          <p class="download-app">Download App</p>
+          <a target="_blank" style="color: inherit; text-decoration: none;" href="/android">
+            <li style="margin-top: 0px;"><img alt="Google Play" style="width: 120px;"
+                src="img/stake_dashboard/img_sidenav_googleplay.png" /></li>
+          </a>
+          <a target="_blank" style="color: inherit; text-decoration: none;" href="/app_store">
+            <li><img alt="App Store" style="width: 120px; margin-top: -18px;"
+                src="img/stake_dashboard/ic_sidenav_playstore.png" /></li>
+          </a>
+        </ul>
+      </div>
+    </aside>
+    <section class="main-section" id="content-section">
+      <div class="triv-loading" style="display: none;">
+        <img
+          src="/assets/user-dashboard/gear-9f842ac20a73cc7aed87e729f411abd876c79c9a3daa98448c39aa031c391ad2.gif" /><br />
+        <img
+          src="/assets/user-dashboard/logo_triv-54152242c2fd819798779668b81718be794a66d96ed1a8298d677f0e94e1d806.png" />
+        <div class="ovo-countdown" style="margin-top: -20px; margin-left: -209px; width: 500px; display: none;">
+          <br />
+          <small>Harap cek akun OVO anda, kami telah mengirimkan request pembayaran.</small><br />
+          <small id="ovoCountdown">60s</small>
+        </div>
+      </div>
+      <div class="triv-content">
+        <section>
+          <div class="row justify-content-center" id="dashboard">
+            <div class="col-12 content-width">
+              <div class="container-centered">
+                <h2 class="text-white text-center">Staking ETH2.0</h2>
+
+                <!-- Section Staking Form-->
+                <section class="stake-amount mts-5">
+                  <div class="triv-content" style="display: block;">
+                    <div class="triv-container-horizontal flex-center">
+                      <!-- Block Input-->
+                      <div class="user-input">
+                        <div class="buy-0">
+                          <div class="stake">
+                            <div class="card-no-tab card-size-normal triv-card-same-height">
+                              <div class="d-flex p-2">
+                                <div class="flex-shrink-0 col-icon">
+                                  <div class="d-flex align-items-center">
+                                    <i class="icon-stake-coin"></i>
+                                  </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3 align-left">
+                                  <div class="d-flex flex-column px-2">
+                                    <span class="coiname">Ethereum 2.0<br><span class="coincode">ETH2</span></span>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <form class="py-4">
+
+                                <div class="you-buy-wrapper">
+                                  <div class="you-buying">
+                                    <span class="text-color-grey text-size-12 text-style-semibold-italic">Amount to
+                                      stake</span>
+                                  </div>
+                                </div>
+                                <div class="card-box-value py-4"><input
+                                    class="value text-size-14 text-color-white currency" id="amount_1" maxlength="100"
+                                    name="amount" placeholder="0.03" type="text">
+                                  <div class="unit text-size-14 text-style-semibold receiving-buy">ETH2</div>
+                                </div>
+                                <div class="you-balance d-flex justify-content-between py-4">
+                                  <span class="text-color-grey text-size-12 text-style-semibold-italic">Your ETH2.0
+                                    Balance</span>
+                                  <span
+                                    class="text-color-white text-size-12 text-style-bold-italic selected-crypto">3.5904
+                                    ETH2</span>
+                                </div>
+                                <div class="btn-group-triv btn-group-toggle d-flex justify-content-between"
+                                  data-toggle="buttons">
+                                  <label class="btn btn-transparent-triv active gap-3">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 25%
+                                  </label>
+                                  <label class="btn btn-transparent-triv">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 50%
+                                  </label>
+                                  <label class="btn btn-transparent-triv">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 70%
+                                  </label>
+                                  <label class="btn btn-transparent-triv">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 100%
+                                  </label>
+                                </div>
+                                <div class="d-none ">
+                                  <p class="text-center text-color-disabled">
+                                    <span class="text-size-14 text-style-semibold paying-buy-amount">0 </span>
+                                    <span class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
+                                  </p>
+
+                                </div>
+                                <div class="separator-horizontal-grey mt-4"></div>
+                                <div class="d-flex justify-content-between py-4">
+                                  <a class="link_to_buy_1 btn btn-dark triv-btn-block m-2" id="link_to_buy_1"><i
+                                      class="icon-left-arrow"></i>Kembali</a>
+                                  <a class="link_to_buy_3 btn btn-primary triv-btn-block m-2" id="link_to_buy_3">Stake
+                                    Now<i class="icon-right-arrow"></i></a>
+                                </div>
+                                <div class="input-note">
+                                  <span class="text-color-disabled text-size-10 text-style-semibold-italic">By clicking
+                                    Stake Now, you agree to the <a href="#"
+                                      class="text-color-highlight-link text-size-12">Terms of
+                                      Service</a> and that you have read our <a href="#"
+                                      class="text-color-highlight-link text-size-12">Privacy
+                                      Policy</a></span>
+                                </div>
+
+
+
+                              </form>
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Block Input-->
+
+                      <!-- Block Info-->
+                      <div class="user-input-buy">
+                        <div class="hide-mobile">
+                          <div class="card-gradient card-size-normal triv-card-same-height">
+                            <p class="text-center text-color-grey text-size-12">You will stake</p><br>
+                            <p class="text-center text-color-white"><span
+                                class="text-size-42 text-style-semibold receiving-buy-amount">1.005
+                              </span><span class="text-size-30 text-style-semibold receiving-buy">ETH2</span></p>
+                            <p class="text-center text-color-disabled"><span
+                                class="text-size-14 text-style-semibold paying-buy-amount">≈ 36.857.075 IDR
+                              </span><span class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span></p>
+                            <div class="separator-horizontal-grey"></div>
+                            <div class="container px-md-4 px-sm-0">
+                              <div class="flex-table">
+                                <div class="flex-cell">
+                                  <label>Min. Lock Period</label>
+                                  <span class="text-size-14 text-style-semibold">± 12 months</span>
+                                </div>
+                                <div class="flex-cell">
+                                  <label>Est. APY<span class="icon-bubble-info ms-2" data-toggle="tooltip"
+                                      data-placement="right" data-type="primary" title=""
+                                      data-original-title="The APY is adjusted daily based on the on-chain staking rewards, and the specific APY is subjected to the page display on the day"></span>
+                                  </label>
+                                  <span class="text-size-14 text-style-semibold">5.87 %</span>
+                                </div>
+
+                              </div>
+                              <div class="flex-table">
+                                <div class="flex-cell">
+                                  <label>Est. daily earnings</label>
+                                  <span class="text-size-14 text-style-semibold">0.015 ETH2</span>
+                                </div>
+                                <div class="flex-cell">
+                                  <label>Total Stake Balance </label>
+                                  <span class="text-size-14 text-style-semibold">2.5854 ETH2</span>
+                                </div>
+
+                              </div>
+                              <div class="flex-table">
+                                <div class="flex-cell">
+                                  <label>Est. monthly earnings</label>
+                                  <span class="text-size-14 text-style-semibold">0.215 ETH2</span>
+                                </div>
+                                <div class="flex-cell">
+                                  <label>Total Wallet Balance</label>
+                                  <span class="text-size-14 text-style-semibold">1.005 ETH2</span>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Block Info-->
+
+
+                    </div>
+                  </div>
+                </section>
+                <!-- End of Section Staking Form-->
+
+                <!-- Block Note List-->
+                <div class="container mts-5">
+                  <ul class="triv-note-list">
+                    <li><span class="text-color-disabled text-size-10">Your coin will be transferred from your wallet
+                        account to your staking account</span></li>
+                    <li><span class="text-color-disabled text-size-10">The periode is determined by the development
+                        progress of ETH 2.0</span></li>
+                    <li><span class="text-color-disabled text-size-10">You will be receive your assets after the lock-up
+                        periode is over</span></li>
+                    <li><span class="text-color-disabled text-size-10">I understand the risks associated with using
+                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur.</span></li>
+
+
+                  </ul>
+                </div>
+                <!-- End of Block Note List-->
+
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
+
+  </div>
+  </section>
+
+
+  </div>
+  <script src="js/trivorigin/application-triv.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/trivorigin/bootstrap-triv.js"></script>
+  <script>
+
+    $('[data-toggle="tooltip"]').each(function () {
+      var options = {
+        html: true
+      };
+
+      if ($(this)[0].hasAttribute('data-type')) {
+        options['template'] =
+          '<div class="tooltip ' + $(this).attr('data-type') + '" role="tooltip">' +
+          '	<div class="tooltip-arrow"></div>' +
+          '	<div class="tooltip-inner"></div>' +
+          '</div>';
+      }
+
+      $(this).tooltip(options);
+    });
+
+  </script>
+
+
+</body>

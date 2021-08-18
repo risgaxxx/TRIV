@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="298" viewBox="0 0 1280 298">
+    <defs>
+        <radialGradient id="ftr84m1h8c" cx="38.349%" cy="38.511%" r="59.098%" fx="38.349%" fy="38.511%" gradientTransform="translate(0.383495,0.385110),scale(0.593258,1.000000),rotate(26.394215),translate(-0.383495,-0.385110)">
+            <stop offset="0%" stop-color="#009AE1" stop-opacity=".2"/>
+            <stop offset="100%" stop-color="#252C3A" stop-opacity="0"/>
+        </radialGradient>
+        <path id="8foszmocla" d="M0 0H1280V298H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(0.000000, -2391.000000) translate(0.000000, 2391.000000)">
+                <mask id="7j4puv7eyb" fill="#fff">
+                    <use xlink:href="#8foszmocla"/>
+                </mask>
+                <use fill="#252525" xlink:href="#8foszmocla"/>
+                <g fill="url(#ftr84m1h8c)" mask="url(#7j4puv7eyb)" opacity=".498">
+                    <path d="M0 0L890 0 890 528z" transform="translate(652.000000, -55.000000)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
