@@ -1475,6 +1475,144 @@ ul.triv-note-list li:before {
   padding-bottom: 20px;
 }
 
+/* toggle switches with bootstrap default colors */
+.custom-control-input-success:checked ~ .custom-control-label::before {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.custom-control-input-danger:checked ~ .custom-control-label::before {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.custom-control-input-warning:checked ~ .custom-control-label::before {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+
+.custom-control-input-info:checked ~ .custom-control-label::before {
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+
+/* Large toggl switches */
+.custom-switch-lg .custom-control-label::before {
+  left: -2.25rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-label::after {
+  top: calc(0.25rem + 3px);
+  left: calc(-2.25rem + 4px);
+  width: calc(1.5rem - 6px);
+  height: calc(1.5rem - 6px);
+  border-radius: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(1.4rem);
+}
+
+.custom-switch-lg .custom-control-label::before {
+  height: 1.5rem;
+}
+
+.custom-switch-lg .custom-control-label {
+  padding-left: 1.5rem;
+  line-height: 1.7rem;
+}
+
+.bg-toggle-in-modal {
+  border-radius: 8px;
+  background-color: #2d3348;
+}
+
+.form-check-input {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+.introjs-arrow.top {
+  top: -10px;
+  left: 10px;
+  border-bottom-color: #242b39;
+}
+.introjs-arrow.top-right {
+  top: -10px;
+  right: 10px;
+  border-bottom-color: #242b39;
+}
+.introjs-arrow.top-middle {
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #242b39;
+}
+.introjs-arrow.right {
+  right: -10px;
+  top: 10px;
+  border-left-color: #242b39;
+}
+.introjs-arrow.right-bottom {
+  bottom: 10px;
+  right: -10px;
+  border-left-color: #242b39;
+}
+.introjs-arrow.bottom {
+  bottom: -10px;
+  left: 10px;
+  border-top-color: #242b39;
+}
+.introjs-arrow.bottom-right {
+  bottom: -10px;
+  right: 10px;
+  border-top-color: #242b39;
+}
+.introjs-arrow.bottom-middle {
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #242b39;
+}
+.introjs-arrow.left {
+  left: -10px;
+  top: 10px;
+  border-right-color: #242b39;
+}
+.introjs-arrow.left-bottom {
+  left: -10px;
+  bottom: 10px;
+  border-right-color: #242b39;
+}
+.introjs-tooltip {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  visibility: visible;
+  background-color: #242b39;
+  min-width: 350px;
+  max-width: 400px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
+  box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
+  -webkit-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
 /*** Last ****/
 .card-higlight-price {
   height: auto !important;
@@ -2609,6 +2747,7 @@ img.icon_stake_landing_section1 {
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
   border-radius: 4px;
 }
+
 /**** End of Last ***/
 /****  End of Triv | Landing ETH ********/
 
@@ -2619,6 +2758,22 @@ img.icon_stake_landing_section1 {
   }
 }
 @media (max-width: 767.98px) {
+  .introjs-tooltip {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    visibility: visible;
+    background-color: #242b39;
+    min-width: 320px;
+    max-width: 400px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
+    box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
+    -webkit-transition: opacity 0.1s ease-out;
+    -o-transition: opacity 0.1s ease-out;
+    transition: opacity 0.1s ease-out;
+  }
+
   /****** Mobile View Dashboard ****/
   .Watch-Staking-Video {
     font-family: Montserrat;
