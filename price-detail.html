@@ -25,13 +25,21 @@
     body {
       background-color: #333;
       background-image: url(img/stake_landing/bg_body_effect.svg);
-
       background-repeat: no-repeat;
-
-
-
-
       color: #ffffff;
+    }
+
+    .panel-group .panel-heading a:after {
+      content: '-';
+      font-size: 20px;
+      float: right;
+      color: #4d5664;
+    }
+
+    .panel-group .panel-heading a.collapsed:after {
+      content: '+';
+      font-size: 20px;
+      color: #4d5664;
     }
   </style>
 
@@ -300,13 +308,14 @@
                     <div class="panel-heading" role="tab" id="headingOne">
                       <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                          aria-expanded="false" aria-controls="collapseOne">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Apa itu Ethereum?
                         </a>
                       </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
+                      aria-labelledby="headingOne">
                       <div class="panel-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
                         squid. 3 wolf
@@ -328,7 +337,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Kenapa harga tiap Ethereum berbeda-beda di Google ?
                         </a>
                       </h4>
@@ -355,7 +364,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Apa saya perlu beli semua 1 Ethereum ?
                         </a>
                       </h4>
@@ -385,7 +394,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Bagaimana menukarkan Ethereum ke Rupiah ?
                         </a>
                       </h4>
@@ -413,7 +422,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Berapa harga 1 Ethereum ?
                         </a>
                       </h4>
@@ -441,7 +450,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Bagaimana cara mendapatkan Ethereum ?
                         </a>
                       </h4>
@@ -468,7 +477,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Apakah Ethereum lebih baik dibandingkan Bitcoin ?
                         </a>
                       </h4>
@@ -496,7 +505,7 @@
                       <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                           href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
                           Apa yang menentukan harga Ethereum ?
                         </a>
                       </h4>

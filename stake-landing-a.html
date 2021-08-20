@@ -21,13 +21,21 @@
         body {
             background-color: #333;
             background-image: url(img/stake_landing/bg_body_effect.svg);
-
             background-repeat: no-repeat;
-
-
-
-
             color: #ffffff;
+        }
+
+        .panel-group .panel-heading a:after {
+            content: '-';
+            font-size: 20px;
+            float: right;
+            color: #4d5664;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            content: '+';
+            font-size: 20px;
+            color: #4d5664;
         }
     </style>
 
@@ -534,13 +542,13 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <span class="panel-title text-size-14 text-style-bold">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                        aria-expanded="false" aria-controls="collapseOne">
-                                        <i class="more-less icon-accordion-plus"></i>
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                         Apa itu Ethereum?
                                     </a>
                                 </span>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
                                 aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <span class="text-size-12 text-color-grey">ETH 2.0 is the
@@ -559,7 +567,7 @@
                                 <span class="panel-title text-size-14 text-style-bold">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                                         href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less icon-accordion-plus"></i>
+                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                         When can I redeem my staked ETH?
                                     </a>
                                 </span>
@@ -597,7 +605,7 @@
                                 <span class="panel-title text-size-14 text-style-bold">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                                         href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <i class="more-less icon-accordion-plus"></i>
+                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                         How is the APY calculated?
                                     </a>
                                 </span>
@@ -635,7 +643,7 @@
                                 <span class="panel-title text-size-14 text-style-bold">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                                         href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <i class="more-less icon-accordion-plus"></i>
+                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                         What is Triv Rewards, and how does it work?
                                     </a>
                                 </span>
@@ -674,7 +682,7 @@
                                 <span class="panel-title text-size-14 text-style-bold">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                                         href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        <i class="more-less icon-accordion-plus"></i>
+                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                         Where can I view my staking balance?
                                     </a>
                                 </span>

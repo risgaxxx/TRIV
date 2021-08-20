@@ -18,6 +18,19 @@
     <link rel="stylesheet" media="all" href="css/trivorigin/custom-triv.css" data-turbolinks-track="reload" />
 
     <link rel="stylesheet" media="all" href="css/styletriv.css" data-turbolinks-track="reload" />
+    <style>
+        .panel-group .panel-heading a:after {
+            content: '-';
+            color: #4d5664;
+            float: right;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            content: '+';
+            color: #4d5664;
+        }
+    </style>
+
 
 </head>
 
@@ -373,14 +386,14 @@
                                             <div class="panel-heading" role="tab" id="headingOne">
                                                 <span class="panel-title text-size-14 text-style-bold">
                                                     <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                                        href="#collapseOne" aria-expanded="false"
+                                                        href="#collapseOne" aria-expanded="true"
                                                         aria-controls="collapseOne">
-                                                        <i class="more-less icon-accordion-plus"></i>
+                                                        <i class="fa fa-plus"></i>
                                                         Apa itu Ethereum?
                                                     </a>
                                                 </span>
                                             </div>
-                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
                                                 aria-labelledby="headingOne">
                                                 <div class="panel-body">
                                                     <span class="text-size-12 text-color-grey">ETH 2.0 is the
@@ -400,7 +413,7 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseTwo"
                                                         aria-expanded="false" aria-controls="collapseTwo">
-                                                        <i class="more-less icon-accordion-plus"></i>
+                                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                                         When can I redeem my staked ETH?
                                                     </a>
                                                 </span>
@@ -439,7 +452,7 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseThree"
                                                         aria-expanded="false" aria-controls="collapseThree">
-                                                        <i class="more-less icon-accordion-plus"></i>
+                                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                                         How is the APY calculated?
                                                     </a>
                                                 </span>
@@ -478,7 +491,7 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseFour"
                                                         aria-expanded="false" aria-controls="collapseFour">
-                                                        <i class="more-less icon-accordion-plus"></i>
+                                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                                         What is Triv Rewards, and how does it work?
                                                     </a>
                                                 </span>
@@ -518,7 +531,7 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse"
                                                         data-parent="#accordion" href="#collapseFive"
                                                         aria-expanded="false" aria-controls="collapseFive">
-                                                        <i class="more-less icon-accordion-plus"></i>
+                                                        <!-- <i class="more-less icon-accordion-plus"></i> -->
                                                         Where can I view my staking balance?
                                                     </a>
                                                 </span>
@@ -650,18 +663,20 @@
     <script src="js/trivorigin/application-triv.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/trivorigin/bootstrap-triv.js"></script>
-    <script type="text/javascript">
-        // (function ($) {
+    <script>
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
 
-        //     $('.collapse').on('shown.bs.collapse', function () {
-        //         $(this).parent().find('.panel-heading').removeClass("icon-accordion-plus").addClass("icon-accordion-minus");
-        //     });
-
-        //     $('.collapse').on('hidden.bs.collapse', function () {
-        //         $(this).parent().find('.panel-heading').removeClass("icon-accordion-minus").addClass("icon-accordion-plus");
-        //     });
-
-        // })(window.jQuery);
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
     </script>
     <script>
 
@@ -747,21 +762,7 @@
             }
         }
 
-        $('[data-toggle="tooltip"]').each(function () {
-            var options = {
-                html: true
-            };
 
-            if ($(this)[0].hasAttribute('data-type')) {
-                options['template'] =
-                    '<div class="tooltip ' + $(this).attr('data-type') + '" role="tooltip">' +
-                    '	<div class="tooltip-arrow"></div>' +
-                    '	<div class="tooltip-inner"></div>' +
-                    '</div>';
-            }
-
-            $(this).tooltip(options);
-        });
 
     </script>
 
