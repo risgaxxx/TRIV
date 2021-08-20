@@ -1456,6 +1456,25 @@ ul.triv-note-list li:before {
   height: 30px;
   vertical-align: middle;
 }
+.icon-landing-asetlist:before {
+  content: "";
+  background-image: url(../img/stake_landing/ic_coin_blue.svg);
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.icon-landing-asetlistactive:before {
+  content: "";
+  background-image: url(../img/stake_landing/ic_coin_transparent.svg);
+  background-size: 40px 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
 .bg-blue-color {
   background-color: #3189c6;
 }
@@ -2129,7 +2148,7 @@ label.input-right-label-calculator {
   width: 100%;
   height: 45px;
   margin: 23px 2px 0 0;
-  padding: 13px 124px 12px;
+
   border-radius: 5px;
   background-color: #009ae1;
 }
@@ -2199,6 +2218,14 @@ p.market-cap-volume {
   letter-spacing: normal;
   color: #8e99af;
 }
+.card-transparent {
+  align-items: center;
+  min-height: 200px;
+  max-height: 200px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #434954;
+}
 a.custom-link {
   font-size: 13px;
 
@@ -2254,6 +2281,8 @@ ul.list-group li:last-child {
   margin-left: 2rem;
   background-color: #009ae1;
   color: #fff;
+  border-radius: 4px;
+  padding: 3px;
 }
 .card-body-news {
   flex: 1 1 auto;
@@ -2401,7 +2430,38 @@ button.subscribe {
 .padding-subscribe {
   padding: 10rem 4rem 10rem 4rem;
 }
+
+.modal-autostake {
+  max-width: 600px;
+}
 @media only screen and (max-width: 600px) {
+  .center-mobile {
+    text-align: center;
+  }
+  .modal-autostake {
+    padding: 30px;
+    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
+  }
+  .panel-faq .panel-heading .panel-title {
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    color: #fff;
+  }
+  .no-ul-li-padding {
+    padding: 0;
+  }
+  section.formstyle {
+    padding: 0;
+  }
+  .size-large-mobile {
+    font-size: 32px;
+  }
   .padding-subscribe {
     padding: 5rem 4rem 5rem 4rem;
   }
@@ -2505,11 +2565,14 @@ button.subscribe {
   .pb-sm-chart {
     margin-bottom: 0.5rem;
   }
-  .container {
+  /* .container {
     padding-right: 5px;
     padding-left: 5px;
     margin-right: auto;
     margin-left: auto;
+  } */
+  section {
+    margin: 12px;
   }
   .container-centered {
     padding: 0.5rem;
@@ -2616,7 +2679,12 @@ img.icon_stake_landing_section1 {
 }
 .wrapper-media {
   position: relative;
-  width: 560px;
+  width: auto;
+}
+.button-less-border-radius {
+  border-radius: 5px;
+  background-color: #009ae1;
+  min-width: 200px;
 }
 .wrapper-media img {
   max-width: 100%;
@@ -2772,6 +2840,9 @@ img.icon_stake_landing_section1 {
     -webkit-transition: opacity 0.1s ease-out;
     -o-transition: opacity 0.1s ease-out;
     transition: opacity 0.1s ease-out;
+  }
+  .content-width {
+    padding: 0px;
   }
 
   /****** Mobile View Dashboard ****/
