@@ -430,7 +430,7 @@
             position: 'top',
             showButtons: false,
             showBullets: false,
-            exitOnOverlayClick: true
+            exitOnOverlayClick: false
 
         }).start();
         //End of Tooltip Script
@@ -438,14 +438,17 @@
         $(document).ready(function () {
 
             $('#modalAutoStake').on('show.bs.modal', function () {
-                $('.introjs-tooltip').css("display", "none");
-                $('.modal-backdrop').css("display", "none");
-                $('.introjs-helperLayer').css("display", "none");
-                $('.introjs-overlay').css("display", "none");
-                $('.introjs-tooltipReferenceLayer').css("display", "none");
-                $('.introjs-showElement').css("display", "none");
+                // $('.introjs-tooltip').css("display", "none");
+                // $('.modal-backdrop').css("display", "none");
+                // $('.introjs-helperLayer')
+                // $('.introjs-overlay').css("display", "none");
+                // $('.introjs-tooltipReferenceLayer').css("display", "none");
+                // $('.introjs-showElement').css("display", "none");
 
-                // alert("asdasd");
+                if ($(".introjs-showElement")[0])  //  case: the tour is in process
+                {
+                    $('.introjs-skipbutton').click();   //  Terminate Introduction
+                }
             });
             // Script Toggle ON OF Auto Stake Balance
             $('span.indicatorToggleLabel').hide();

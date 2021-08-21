@@ -2833,21 +2833,6 @@ img.icon_stake_landing_section1 {
   }
 }
 @media (max-width: 767.98px) {
-  .introjs-tooltip {
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    position: absolute;
-    visibility: visible;
-    background-color: #242b39;
-    min-width: 320px;
-    max-width: 400px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
-    box-shadow: 0 3px 30px rgb(33 33 33 / 30%);
-    -webkit-transition: opacity 0.1s ease-out;
-    -o-transition: opacity 0.1s ease-out;
-    transition: opacity 0.1s ease-out;
-  }
   .content-width {
     padding: 0px;
   }
