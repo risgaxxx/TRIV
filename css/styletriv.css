@@ -2440,9 +2440,9 @@ button.subscribe {
   }
   .modal-autostake {
     padding: 30px;
-    box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
   }
   .panel-faq .panel-heading .panel-title {
     font-size: 14px;
@@ -2724,6 +2724,12 @@ img.icon_stake_landing_section1 {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 767.98px) {
+  .modal-autostake {
+    padding: 30px;
+    box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 2px 5px 53px 18px rgba(0, 0, 0, 0.58);
+  }
   .sidebar {
     top: 5rem;
   }
@@ -2891,6 +2897,8 @@ img.icon_stake_landing_section1 {
     width: auto;
     margin: 0rem;
     pointer-events: none;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   /****** End of Mobile View Dashboard ****/
   /****** Mobile View Stake Amount ****/

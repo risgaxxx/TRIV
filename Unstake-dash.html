@@ -156,456 +156,441 @@
                 </div>
             </div>
             <div class="triv-content">
-                <section>
-                    <div class="row justify-content-center" id="dashboard">
-                        <div class="col-12 content-width">
-                            <div class="container-centered">
-                                <!-- <div class="show-stake-confirm-nav" style="display: none;">
+
+                <div class="row justify-content-center" id="dashboard">
+                    <div class="col-12 content-width">
+
+                        <!-- <div class="show-stake-confirm-nav" style="display: none;">
                                     <div class="d-flex py-4">
                                         <div class="p-2"><a href="#"><i class="icon-arrow-back"></i></a></div>
                                         <div class="p-2 flex-grow-1 text-center text-size-20">Staking ETH2.0</div>
                                     </div>
                                 </div> -->
-                                <!-- <div class="show-stake-overview-nav" style="display: none;">
+                        <!-- <div class="show-stake-overview-nav" style="display: none;">
                                     <div class="d-flex py-4">
                                         <div class="p-2"><a href="#"><i class="icon-arrow-back"></i></a></div>
                                         <div class="p-2 flex-grow-1 text-center text-size-20">Staking ETH2.0</div>
                                     </div>
                                 </div> -->
-                                <!-- <h2 id="titleNav" class="text-white text-center">Staking ETH2.0</h2> -->
-                                <div class="d-flex">
-                                    <div id="icArrowNav" class="p-2 align-self-center icArrowNav"
-                                        style="display: none;"><a href="#"><i class="icon-arrow-back"></i></a>
-                                    </div>
-                                    <div class="titleNav p-2 flex-grow-1">
-                                        <h2 id="titleNav" class="text-white text-center titleNav">Unstaking Dash</h2>
-                                    </div>
-
-                                </div>
-
-                                <!-- Section Staking Form-->
-                                <section class="stake-amount mts-5">
-                                    <!-- Staking Step-0 -->
-                                    <div class="stake-step-0">
-                                        <div class="triv-content" style="display: block;">
-                                            <div class="triv-container-horizontal flex-center">
-                                                <!-- Block Input-->
-                                                <div class="user-input">
-                                                    <div class="buy-0">
-                                                        <!-- Stack Form -->
-                                                        <div class="stake">
-                                                            <div
-                                                                class="card-no-tab card-size-normal triv-card-same-height">
-                                                                <div class="d-flex p-2">
-                                                                    <div class="flex-shrink-0 col-icon">
-                                                                        <div class="d-flex align-items-center">
-                                                                            <i class="icon-stake-coin"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="flex-grow-1 ms-3 align-left">
-                                                                        <div class="d-flex flex-column px-2">
-                                                                            <span class="coiname">Dash<br><span
-                                                                                    class="coincode">DASH</span></span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <form class="py-4">
-
-                                                                    <div class="you-buy-wrapper">
-                                                                        <div class="you-buying">
-                                                                            <span
-                                                                                class="text-color-grey text-size-12">Amount
-                                                                                to
-                                                                                Unstake</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-box-value py-4"><input
-                                                                            class="value text-size-14 text-color-white currency"
-                                                                            id="amount_1" maxlength="100" name="amount"
-                                                                            placeholder="0.03" type="text"
-                                                                            value="1.905">
-                                                                        <div
-                                                                            class="unit text-size-14 text-style-semibold receiving-buy">
-                                                                            DASH</div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="you-balance d-flex justify-content-between py-4">
-                                                                        <span
-                                                                            class="text-color-grey text-size-12 ">Stake
-                                                                            Balance</span>
-                                                                        <span
-                                                                            class="text-color-white text-size-12 text-style-bold-italic selected-crypto">1.905
-                                                                            DASH</span>
-                                                                    </div>
-                                                                    <div class="btn-group-triv btn-group-toggle d-flex justify-content-between"
-                                                                        data-toggle="buttons">
-                                                                        <label
-                                                                            class="btn btn-transparent-triv active gap-3">
-                                                                            <input type="radio" name="options"
-                                                                                id="option1" autocomplete="off" checked>
-                                                                            25%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option2" autocomplete="off"> 50%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option3" autocomplete="off"> 70%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option3" autocomplete="off"> 100%
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="d-none ">
-                                                                        <p class="text-center text-color-disabled">
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold paying-buy-amount">0
-                                                                            </span>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
-                                                                        </p>
-
-                                                                    </div>
-                                                                    <div class="separator-horizontal-grey mt-4"></div>
-                                                                    <div class="d-flex justify-content-between py-4">
-                                                                        <a class="link_to_buy_1 btn btn-dark triv-btn-block m-2"
-                                                                            id="btn-stake-back"><i
-                                                                                class="icon-left-arrow"></i>Back</a>
-                                                                        <a class="link_to_buy_3 btn btn-secondary triv-btn-block m-2"
-                                                                            id="btn-stake" onclick="btnStake()">UnStake
-                                                                            <i class="icon-right-arrow"></i></a>
-                                                                    </div>
-                                                                    <div class="input-note">
-                                                                        <span
-                                                                            class="text-color-disabled text-size-10 text-style-semibold-italic">By
-                                                                            clicking
-                                                                            Stake Now, you agree to the <a href="#"
-                                                                                class="text-color-highlight-link text-size-12">Terms
-                                                                                of
-                                                                                Service</a> and that you have read our
-                                                                            <a href="#"
-                                                                                class="text-color-highlight-link text-size-12">Privacy
-                                                                                Policy</a></span>
-                                                                    </div>
-
-
-
-                                                                </form>
-
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- End of Stack Form-->
-
-                                                        <!-- Stak Confirm-->
-                                                        <div class="stake-confirm" style="display: block;">
-                                                            <div
-                                                                class="card-no-tab card-size-normal triv-card-same-height">
-                                                                <div class="d-flex p-2">
-                                                                    <div class="flex-shrink-0 col-icon">
-                                                                        <div class="d-flex align-items-center">
-                                                                            <i class="icon-stake-coin"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="flex-grow-1 ms-3 align-left">
-                                                                        <div class="d-flex flex-column px-2">
-                                                                            <span class="coiname">Dash<br><span
-                                                                                    class="coincode">DASH</span></span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <form class="py-4">
-
-                                                                    <div class="you-buy-wrapper">
-                                                                        <div class="you-buying">
-                                                                            <span
-                                                                                class="text-color-grey text-size-12">Amount
-                                                                                to
-                                                                                Unstake</span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="card-box-value py-4"><input
-                                                                            class="value text-size-14 text-color-white currency"
-                                                                            id="amount_1" maxlength="100" name="amount"
-                                                                            placeholder="0.03" type="text"
-                                                                            value="1.905">
-                                                                        <div
-                                                                            class="unit text-size-14 text-style-semibold receiving-buy">
-                                                                            DASH</div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="you-balance d-flex justify-content-between py-4">
-                                                                        <span class="text-color-grey text-size-12">Stake
-                                                                            Balance</span>
-                                                                        <span
-                                                                            class="text-color-white text-size-12 text-style-bold-italic selected-crypto">1.905
-                                                                            DASH</span>
-                                                                    </div>
-                                                                    <div class="btn-group-triv btn-group-toggle d-flex justify-content-between"
-                                                                        data-toggle="buttons">
-                                                                        <label
-                                                                            class="btn btn-transparent-triv active gap-3">
-                                                                            <input type="radio" name="options"
-                                                                                id="option1" autocomplete="off" checked>
-                                                                            25%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option2" autocomplete="off"> 50%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option3" autocomplete="off"> 70%
-                                                                        </label>
-                                                                        <label class="btn btn-transparent-triv">
-                                                                            <input type="radio" name="options"
-                                                                                id="option3" autocomplete="off"> 100%
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="d-none ">
-                                                                        <p class="text-center text-color-disabled">
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold paying-buy-amount">0
-                                                                            </span>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
-                                                                        </p>
-
-                                                                    </div>
-                                                                    <div class="separator-horizontal-grey mt-4"></div>
-                                                                    <div class="flex-table flex-sm-row">
-                                                                        <div class="flex-cell">
-                                                                            <label>Min. Lock Period</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">No-LockUp</span>
-                                                                        </div>
-                                                                        <div class="flex-cell">
-                                                                            <label>Est. Receive Date</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">Immediately</span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="d-flex justify-content-between py-4">
-                                                                        <a class="link_to_buy_1 btn btn-dark triv-btn-block m-2"
-                                                                            id="btn-stake-confirm-back"><i
-                                                                                class="icon-left-arrow"></i>Kembali</a>
-
-                                                                        <a onclick="btnConfirm();"
-                                                                            class="link_to_buy_3 btn btn-secondary triv-btn-block m-2"
-                                                                            id="btn-stake-confirm"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target="#modalStakeSuccess">Confirmation<i
-                                                                                class="icon-right-arrow"></i></a>
-
-
-                                                                    </div>
-                                                                    <div class="input-note">
-                                                                        <span
-                                                                            class="text-color-disabled text-size-10 text-style-semibold-italic">By
-                                                                            clicking
-                                                                            Stake Now, you agree to the <a href="#"
-                                                                                class="text-color-highlight-link text-size-12">Terms
-                                                                                of
-                                                                                Service</a> and that you have read our
-                                                                            <a href="#"
-                                                                                class="text-color-highlight-link text-size-12">Privacy
-                                                                                Policy</a></span>
-                                                                    </div>
-
-
-
-                                                                </form>
-
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- End of Stack Form -->
-
-                                                        <!-- Stack mobile overview-->
-                                                        <div class="stake-mobile-overview" style="display: none;">
-                                                            <div
-                                                                class="card-gradient card-size-normal triv-card-same-height">
-                                                                <p class="text-center text-color-grey text-size-12">You
-                                                                    will
-                                                                    Unstake</p><br>
-                                                                <p class="text-center text-color-white"><span
-                                                                        class="text-size-42 text-style-semibold receiving-buy-amount">1.905
-                                                                    </span><span
-                                                                        class="text-size-30 text-style-semibold receiving-buy">DASH</span>
-                                                                </p>
-                                                                <p class="text-center text-color-disabled"><span
-                                                                        class="text-size-14 text-style-semibold paying-buy-amount">≈
-                                                                        4.578.269,87
-                                                                    </span><span
-                                                                        class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
-                                                                </p>
-                                                                <div class="separator-horizontal-grey"></div>
-                                                                <div class="container px-md-4 px-sm-0">
-                                                                    <div class="flex-table">
-                                                                        <div class="flex-cell flex-cell-mobile">
-                                                                            <label>Wallet Address</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">0x0b2fFbC8D7D522B02edcDDff1cA154fCC2c8d9C5</span>
-                                                                        </div>
-
-
-                                                                    </div>
-                                                                    <div class="flex-table">
-                                                                        <div class="flex-cell">
-                                                                            <label>Min. Lock Period</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">No
-                                                                                Lock-Up</span>
-                                                                        </div>
-                                                                        <div class="flex-cell">
-                                                                            <label>Total Stake Balance </label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">0
-                                                                                DASH</span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                    <div class="flex-table">
-                                                                        <div class="flex-cell">
-                                                                            <label>Est. Receive Date</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">Immediately</span>
-                                                                        </div>
-                                                                        <div class="flex-cell">
-                                                                            <label>Total Wallet Balance</label>
-                                                                            <span
-                                                                                class="text-size-14 text-style-semibold">5.1007
-                                                                                DASH</span>
-                                                                        </div>
-
-                                                                    </div>
-                                                                    <div class="py-4">
-                                                                        <div class="text-center">
-
-                                                                            <a class="link_to_buy_3 btn btn-secondary triv-btn-fullwidth m-2"
-                                                                                id="btn-stake-mobile-confirm"
-                                                                                onclick="showModalStakeSuccess()"
-                                                                                data-bs-toggle="modal"
-                                                                                data-bs-target="#modalStakeSuccess">Stake
-                                                                                Now<i class="icon-right-arrow"></i></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="input-note">
-                                                                    <span
-                                                                        class="text-color-disabled text-size-10 text-style-semibold-italic">By
-                                                                        clicking
-                                                                        Stake Now, you agree to the <a href="#"
-                                                                            class="text-color-highlight-link text-size-12">Terms
-                                                                            of
-                                                                            Service</a> and that you have read our
-                                                                        <a href="#"
-                                                                            class="text-color-highlight-link text-size-12">Privacy
-                                                                            Policy</a></span>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- End of Stack mobile overview-->
-                                                    </div>
-                                                </div>
-                                                <!-- End of Block Input-->
-
-                                                <!-- Block Info-->
-                                                <div class="">
-                                                    <div class="hide-mobile">
-                                                        <div
-                                                            class="card-gradient card-size-normal triv-card-same-height">
-                                                            <p class="text-center text-color-grey text-size-12">You will
-                                                                Unstake</p><br>
-                                                            <p class="text-center text-color-white"><span
-                                                                    class="text-size-42 text-style-semibold receiving-buy-amount">1.905
-                                                                </span><span
-                                                                    class="text-size-30 text-style-semibold receiving-buy">DASH</span>
-                                                            </p>
-                                                            <p class="text-center text-color-disabled"><span
-                                                                    class="text-size-14 text-style-semibold paying-buy-amount">
-                                                                    ≈ 4.578.269,87
-                                                                </span><span
-                                                                    class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
-                                                            </p>
-                                                            <div class="separator-horizontal-grey"></div>
-                                                            <div class="container px-md-4 px-sm-0">
-                                                                <div class="flex-table">
-                                                                    <div class="flex-cell">
-                                                                        <label>Min. Lock Period</label>
-                                                                        <span
-                                                                            class="text-size-14 text-style-semibold">No-LockUp</span>
-                                                                    </div>
-                                                                    <div class="flex-cell">
-                                                                        <label>Total Stake Balance</label>
-                                                                        <span class="text-size-14 text-style-semibold">0
-                                                                            DASH</span>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="flex-table">
-                                                                    <div class="flex-cell">
-                                                                        <label>Est. Receive Date</label>
-                                                                        <span
-                                                                            class="text-size-14 text-style-semibold">Immediately</span>
-                                                                    </div>
-                                                                    <div class="flex-cell">
-                                                                        <label>Total Wallet Balance</label>
-                                                                        <span
-                                                                            class="text-size-14 text-style-semibold">5.1007
-                                                                            DASH</span>
-                                                                    </div>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End of Block Info-->
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End of Staking Step-0 -->
-
-                                </section>
-                                <!-- End of Section Staking Form-->
-
-                                <!-- Block Note List-->
-                                <div class="container mts-5">
-                                    <ul class="triv-note-list no-ul-li-padding">
-                                        <li><span class="text-color-disabled text-size-10">Your coin will be transferred
-                                                from your wallet
-                                                account to your staking account</span></li>
-
-                                        <li><span class="text-color-disabled text-size-10">I understand the risks
-                                                associated with using
-                                                inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                                explicabo.
-                                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                                                fugit, sed quia
-                                                consequuntur.</span></li>
-
-
-                                    </ul>
-                                </div>
-                                <!-- End of Block Note List-->
-
-
+                        <!-- <h2 id="titleNav" class="text-white text-center">Staking ETH2.0</h2> -->
+                        <div class="d-flex">
+                            <div id="icArrowNav" class="p-2 align-self-center icArrowNav" style="display: none;"><a
+                                    href="#"><i class="icon-arrow-back"></i></a>
                             </div>
+                            <div class="titleNav p-2 flex-grow-1">
+                                <h2 id="titleNav" class="text-white text-center titleNav">Unstaking Dash</h2>
+                            </div>
+
                         </div>
 
+                        <!-- Section Staking Form-->
+                        <section class="stake-amount mts-5">
+                            <!-- Staking Step-0 -->
+                            <div class="stake-step-0">
+                                <div class="triv-content" style="display: block;">
+                                    <div class="triv-container-horizontal flex-center">
+                                        <!-- Block Input-->
+                                        <div class="user-input">
+                                            <div class="buy-0">
+                                                <!-- Stack Form -->
+                                                <div class="stake">
+                                                    <div class="card-no-tab card-size-normal triv-card-same-height">
+                                                        <div class="d-flex p-2">
+                                                            <div class="flex-shrink-0 col-icon">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i class="icon-stake-coin"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3 align-left">
+                                                                <div class="d-flex flex-column px-2">
+                                                                    <span class="coiname">Dash<br><span
+                                                                            class="coincode">DASH</span></span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <form class="py-4">
+
+                                                            <div class="you-buy-wrapper">
+                                                                <div class="you-buying">
+                                                                    <span class="text-color-grey text-size-12">Amount
+                                                                        to
+                                                                        Unstake</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-box-value py-4"><input
+                                                                    class="value text-size-14 text-color-white currency"
+                                                                    id="amount_1" maxlength="100" name="amount"
+                                                                    placeholder="0.03" type="text" value="1.905">
+                                                                <div
+                                                                    class="unit text-size-14 text-style-semibold receiving-buy">
+                                                                    DASH</div>
+                                                            </div>
+                                                            <div
+                                                                class="you-balance d-flex justify-content-between py-4">
+                                                                <span class="text-color-grey text-size-12 ">Stake
+                                                                    Balance</span>
+                                                                <span
+                                                                    class="text-color-white text-size-12 text-style-bold-italic selected-crypto">1.905
+                                                                    DASH</span>
+                                                            </div>
+                                                            <div class="btn-group-triv btn-group-toggle d-flex justify-content-between"
+                                                                data-toggle="buttons">
+                                                                <label class="btn btn-transparent-triv active gap-3">
+                                                                    <input type="radio" name="options" id="option1"
+                                                                        autocomplete="off" checked>
+                                                                    25%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option2"
+                                                                        autocomplete="off"> 50%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option3"
+                                                                        autocomplete="off"> 70%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option3"
+                                                                        autocomplete="off"> 100%
+                                                                </label>
+                                                            </div>
+                                                            <div class="d-none ">
+                                                                <p class="text-center text-color-disabled">
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold paying-buy-amount">0
+                                                                    </span>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
+                                                                </p>
+
+                                                            </div>
+                                                            <div class="separator-horizontal-grey mt-4"></div>
+                                                            <div class="d-flex justify-content-between py-4">
+                                                                <a class="link_to_buy_1 btn btn-dark triv-btn-block m-2"
+                                                                    id="btn-stake-back"><i
+                                                                        class="icon-left-arrow"></i>Back</a>
+                                                                <a class="link_to_buy_3 btn btn-secondary triv-btn-block m-2"
+                                                                    id="btn-stake" onclick="btnStake()">UnStake
+                                                                    <i class="icon-right-arrow"></i></a>
+                                                            </div>
+                                                            <div class="input-note">
+                                                                <span
+                                                                    class="text-color-disabled text-size-10 text-style-semibold-italic">By
+                                                                    clicking
+                                                                    Stake Now, you agree to the <a href="#"
+                                                                        class="text-color-highlight-link text-size-12">Terms
+                                                                        of
+                                                                        Service</a> and that you have read our
+                                                                    <a href="#"
+                                                                        class="text-color-highlight-link text-size-12">Privacy
+                                                                        Policy</a></span>
+                                                            </div>
+
+
+
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of Stack Form-->
+
+                                                <!-- Stak Confirm-->
+                                                <div class="stake-confirm" style="display: block;">
+                                                    <div class="card-no-tab card-size-normal triv-card-same-height">
+                                                        <div class="d-flex p-2">
+                                                            <div class="flex-shrink-0 col-icon">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i class="icon-stake-coin"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3 align-left">
+                                                                <div class="d-flex flex-column px-2">
+                                                                    <span class="coiname">Dash<br><span
+                                                                            class="coincode">DASH</span></span>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <form class="py-4">
+
+                                                            <div class="you-buy-wrapper">
+                                                                <div class="you-buying">
+                                                                    <span class="text-color-grey text-size-12">Amount
+                                                                        to
+                                                                        Unstake</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-box-value py-4"><input
+                                                                    class="value text-size-14 text-color-white currency"
+                                                                    id="amount_1" maxlength="100" name="amount"
+                                                                    placeholder="0.03" type="text" value="1.905">
+                                                                <div
+                                                                    class="unit text-size-14 text-style-semibold receiving-buy">
+                                                                    DASH</div>
+                                                            </div>
+                                                            <div
+                                                                class="you-balance d-flex justify-content-between py-4">
+                                                                <span class="text-color-grey text-size-12">Stake
+                                                                    Balance</span>
+                                                                <span
+                                                                    class="text-color-white text-size-12 text-style-bold-italic selected-crypto">1.905
+                                                                    DASH</span>
+                                                            </div>
+                                                            <div class="btn-group-triv btn-group-toggle d-flex justify-content-between"
+                                                                data-toggle="buttons">
+                                                                <label class="btn btn-transparent-triv active gap-3">
+                                                                    <input type="radio" name="options" id="option1"
+                                                                        autocomplete="off" checked>
+                                                                    25%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option2"
+                                                                        autocomplete="off"> 50%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option3"
+                                                                        autocomplete="off"> 70%
+                                                                </label>
+                                                                <label class="btn btn-transparent-triv">
+                                                                    <input type="radio" name="options" id="option3"
+                                                                        autocomplete="off"> 100%
+                                                                </label>
+                                                            </div>
+                                                            <div class="d-none ">
+                                                                <p class="text-center text-color-disabled">
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold paying-buy-amount">0
+                                                                    </span>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
+                                                                </p>
+
+                                                            </div>
+                                                            <div class="separator-horizontal-grey mt-4"></div>
+                                                            <div class="flex-table flex-sm-row">
+                                                                <div class="flex-cell">
+                                                                    <label>Min. Lock Period</label>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold">No-LockUp</span>
+                                                                </div>
+                                                                <div class="flex-cell">
+                                                                    <label>Est. Receive Date</label>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold">Immediately</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex justify-content-between py-4">
+                                                                <a class="link_to_buy_1 btn btn-dark triv-btn-block m-2"
+                                                                    id="btn-stake-confirm-back"><i
+                                                                        class="icon-left-arrow"></i>Kembali</a>
+
+                                                                <a onclick="btnConfirm();"
+                                                                    class="link_to_buy_3 btn btn-secondary triv-btn-block m-2"
+                                                                    id="btn-stake-confirm" data-bs-toggle="modal"
+                                                                    data-bs-target="#modalStakeSuccess">Confirmation<i
+                                                                        class="icon-right-arrow"></i></a>
+
+
+                                                            </div>
+                                                            <div class="input-note">
+                                                                <span
+                                                                    class="text-color-disabled text-size-10 text-style-semibold-italic">By
+                                                                    clicking
+                                                                    Stake Now, you agree to the <a href="#"
+                                                                        class="text-color-highlight-link text-size-12">Terms
+                                                                        of
+                                                                        Service</a> and that you have read our
+                                                                    <a href="#"
+                                                                        class="text-color-highlight-link text-size-12">Privacy
+                                                                        Policy</a></span>
+                                                            </div>
+
+
+
+                                                        </form>
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of Stack Form -->
+
+                                                <!-- Stack mobile overview-->
+                                                <div class="stake-mobile-overview" style="display: none;">
+                                                    <div class="card-gradient card-size-normal triv-card-same-height">
+                                                        <p class="text-center text-color-grey text-size-12">You
+                                                            will
+                                                            Unstake</p><br>
+                                                        <p class="text-center text-color-white"><span
+                                                                class="text-size-42 text-style-semibold receiving-buy-amount">1.905
+                                                            </span><span
+                                                                class="text-size-30 text-style-semibold receiving-buy">DASH</span>
+                                                        </p>
+                                                        <p class="text-center text-color-disabled"><span
+                                                                class="text-size-14 text-style-semibold paying-buy-amount">≈
+                                                                4.578.269,87
+                                                            </span><span
+                                                                class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
+                                                        </p>
+                                                        <div class="separator-horizontal-grey"></div>
+                                                        <div class="container px-md-4 px-sm-0">
+                                                            <div class="flex-table">
+                                                                <div class="flex-cell flex-cell-mobile">
+                                                                    <label>Wallet Address</label>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold">0x0b2fFbC8D7D522B02edcDDff1cA154fCC2c8d9C5</span>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="flex-table">
+                                                                <div class="flex-cell">
+                                                                    <label>Min. Lock Period</label>
+                                                                    <span class="text-size-14 text-style-semibold">No
+                                                                        Lock-Up</span>
+                                                                </div>
+                                                                <div class="flex-cell">
+                                                                    <label>Total Stake Balance </label>
+                                                                    <span class="text-size-14 text-style-semibold">0
+                                                                        DASH</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="flex-table">
+                                                                <div class="flex-cell">
+                                                                    <label>Est. Receive Date</label>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold">Immediately</span>
+                                                                </div>
+                                                                <div class="flex-cell">
+                                                                    <label>Total Wallet Balance</label>
+                                                                    <span
+                                                                        class="text-size-14 text-style-semibold">5.1007
+                                                                        DASH</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="py-4">
+                                                                <div class="text-center">
+
+                                                                    <a class="link_to_buy_3 btn btn-secondary triv-btn-fullwidth m-2"
+                                                                        id="btn-stake-mobile-confirm"
+                                                                        onclick="showModalStakeSuccess()"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#modalStakeSuccess">Stake
+                                                                        Now<i class="icon-right-arrow"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-note">
+                                                            <span
+                                                                class="text-color-disabled text-size-10 text-style-semibold-italic">By
+                                                                clicking
+                                                                Stake Now, you agree to the <a href="#"
+                                                                    class="text-color-highlight-link text-size-12">Terms
+                                                                    of
+                                                                    Service</a> and that you have read our
+                                                                <a href="#"
+                                                                    class="text-color-highlight-link text-size-12">Privacy
+                                                                    Policy</a></span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of Stack mobile overview-->
+                                            </div>
+                                        </div>
+                                        <!-- End of Block Input-->
+
+                                        <!-- Block Info-->
+                                        <div class="">
+                                            <div class="hide-mobile">
+                                                <div class="card-gradient card-size-normal triv-card-same-height">
+                                                    <p class="text-center text-color-grey text-size-12">You will
+                                                        Unstake</p><br>
+                                                    <p class="text-center text-color-white"><span
+                                                            class="text-size-42 text-style-semibold receiving-buy-amount">1.905
+                                                        </span><span
+                                                            class="text-size-30 text-style-semibold receiving-buy">DASH</span>
+                                                    </p>
+                                                    <p class="text-center text-color-disabled"><span
+                                                            class="text-size-14 text-style-semibold paying-buy-amount">
+                                                            ≈ 4.578.269,87
+                                                        </span><span
+                                                            class="text-size-14 text-style-semibold paying-vmoney-buy">IDR</span>
+                                                    </p>
+                                                    <div class="separator-horizontal-grey"></div>
+                                                    <div class="container px-md-4 px-sm-0">
+                                                        <div class="flex-table">
+                                                            <div class="flex-cell">
+                                                                <label>Min. Lock Period</label>
+                                                                <span
+                                                                    class="text-size-14 text-style-semibold">No-LockUp</span>
+                                                            </div>
+                                                            <div class="flex-cell">
+                                                                <label>Total Stake Balance</label>
+                                                                <span class="text-size-14 text-style-semibold">0
+                                                                    DASH</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="flex-table">
+                                                            <div class="flex-cell">
+                                                                <label>Est. Receive Date</label>
+                                                                <span
+                                                                    class="text-size-14 text-style-semibold">Immediately</span>
+                                                            </div>
+                                                            <div class="flex-cell">
+                                                                <label>Total Wallet Balance</label>
+                                                                <span class="text-size-14 text-style-semibold">5.1007
+                                                                    DASH</span>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Block Info-->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End of Staking Step-0 -->
+
+                        </section>
+                        <!-- End of Section Staking Form-->
+
+                        <!-- Block Note List-->
+                        <div class="container mts-5">
+                            <ul class="triv-note-list no-ul-li-padding">
+                                <li><span class="text-color-disabled text-size-10">Your coin will be transferred
+                                        from your wallet
+                                        account to your staking account</span></li>
+
+                                <li><span class="text-color-disabled text-size-10">I understand the risks
+                                        associated with using
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                        explicabo.
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                        fugit, sed quia
+                                        consequuntur.</span></li>
+
+
+                            </ul>
+                        </div>
+                        <!-- End of Block Note List-->
+
+
+
                     </div>
-                </section>
+
+                </div>
+
             </div>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>

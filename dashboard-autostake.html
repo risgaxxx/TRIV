@@ -19,7 +19,15 @@
     <link rel="stylesheet" media="all" href="css/introjs.min.css" data-turbolinks-track="reload" />
     <link rel="stylesheet" media="all" href="css/styletriv.css" data-turbolinks-track="reload" />
 
+    <style>
+        html {
+            height: 100%;
+        }
 
+        body {
+            min-height: 100%;
+        }
+    </style>
 
 </head>
 
@@ -338,33 +346,30 @@
             <!-- End of Modal AutoStake-->
             <!-- Modal AutoStake Off-->
             <div class="modal fade" id="modalAutoStakeSetOff" style="display: none">
-                <div class="modal-dialog  modal-dialog-centered modal-autostake">
-                    <div class="modal-content bg-triv-modal">
+                <div class="modal-dialog  modal-dialog-centered">
+                    <div class="modal-content bg-triv-modal modal-autostake"
+                        style="margin-left: 12px;margin-right: 12px;">
 
 
-                        <div class="modal-body px-4 mt-5">
+                        <div class="modal-body">
                             <!-- Content Modal-->
-                            <div class="container">
-
-
-                                <div class="d-flex flex-column justify-content-center">
-
-                                    <div class="p-2 text-center">
-                                        <h5 class="">Are you sure you want to Turn OFF Auto Stake?</h5>
-                                    </div>
-                                    <div class="p-2 text-center">
-                                        <span class="text-size-12 text-color-grey">You won’t be able to earn daily
-                                            passive income anymore.</span>
-                                    </div>
-                                    <div class="p-2 text-center">
-                                        <span class="text-size-12 text-color-grey">We predict you will earn<br />
-                                            <span class="text-style-bold text-color-white"> ≈ 36.857.075
-                                                IDR</span><br />
-                                            by the end of the year if you do not turn it off</span>
-                                    </div>
 
 
 
+                            <div class="d-flex flex-column justify-content-center">
+
+                                <div class="p-2 text-center">
+                                    <h5 class="">Are you sure you want to Turn OFF Auto Stake?</h5>
+                                </div>
+                                <div class="p-2 text-center">
+                                    <span class="text-size-12 text-color-grey">You won’t be able to earn daily
+                                        passive income anymore.</span>
+                                </div>
+                                <div class="p-2 text-center">
+                                    <span class="text-size-12 text-color-grey">We predict you will earn<br />
+                                        <span class="text-style-bold text-color-white"> ≈ 36.857.075
+                                            IDR</span><br />
+                                        by the end of the year if you do not turn it off</span>
                                 </div>
 
 
@@ -372,11 +377,15 @@
                             </div>
 
 
+
+
+
+
                             <!-- End of Content Modal-->
                         </div>
                         <div class="modal-footer-center">
 
-                            <div class="d-flex justify-content-between py-4">
+                            <div class="d-flex justify-content-between">
                                 <a class="link_to_buy_1 btn btn-primary triv-btn-block m-2" data-bs-dismiss="modal"
                                     id="btn-stake-back">Cancel
                                     <a class="link_to_buy_3 btn btn-dark triv-btn-block m-2" id="btn-stake"><span
@@ -427,6 +436,17 @@
         //End of Tooltip Script
 
         $(document).ready(function () {
+
+            $('#modalAutoStake').on('show.bs.modal', function () {
+                $('.introjs-tooltip').css("display", "none");
+                $('.modal-backdrop').css("display", "none");
+                $('.introjs-helperLayer').css("display", "none");
+                $('.introjs-overlay').css("display", "none");
+                $('.introjs-tooltipReferenceLayer').css("display", "none");
+                $('.introjs-showElement').css("display", "none");
+
+                // alert("asdasd");
+            });
             // Script Toggle ON OF Auto Stake Balance
             $('span.indicatorToggleLabel').hide();
 
