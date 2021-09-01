@@ -16,6 +16,7 @@
   <link rel="stylesheet" media="all" href="css/trivorigin/bootstrap-triv.css" data-turbolinks-track="reload" />
   <link rel="stylesheet" media="all" href="css/trivorigin/custom-triv.css" data-turbolinks-track="reload" />
   <link rel="stylesheet" media="all" href="css/styletriv.css" data-turbolinks-track="reload" />
+  <link rel="stylesheet" media="all" href="css/update.css" data-turbolinks-track="reload" />
 </head>
 
 <body>
@@ -192,6 +193,7 @@
                   <img onclick="showModal()" id="playVideoModal" src="img/stake_dashboard/play.svg" class="play"
                     data-bs-toggle="modal" data-bs-target="#customTrivFullscreenModal" />
                 </div>
+
               </div>
               <!-- Show on mobile View-->
               <!-- <div class="dashboard-header p-2 mts-5 d-md-none d-lg-none"><span class="text-font-alternates align-self-start">Stake Assets</span><a class="" id="search-assets"><i class="icon-search-stake-table-top"></i></a><a class="" id="setting-assets"><i class="icon-setting-stake-table-top"></i></a></div> -->
@@ -207,6 +209,13 @@
                 </div>
               </div>
               <!-- End of Show on mobile view-->
+              <!-- Pulse Dot -->
+              <div class="d-flex align-items-center p-2">
+                <p class="text-size-12 text-style-bold my-2 color-pink">3 Unstaking on Progress</p>
+                <div class=" dot-pulse mx-4">
+                </div>
+              </div>
+              <!-- End of Pulse Dot-->
               <!-- Table Crypto List-->
               <div class="text-center">
                 <div class="table-responsive-sm p-2 d-none d-md-block d-lg-block">
@@ -875,9 +884,44 @@
                 </div>
                 <!-- End of List Crypto Mobile View-->
               </div>
-              <div class="Watch-Staking-Video">
-                <span>View My Transactions</span>
+              <div
+                class="d-flex flex-column justify-content-between block-staking-progress align-items-center flex-md-row flex-lg-row my-4">
+
+                <div class="card card-panel-small" onclick="showModalUnstakeProgress()" data-bs-toggle="modal"
+                  data-bs-target="#modalUnstakeProgressList">
+                  <span
+                    class="badge-staking-progress position-absolute top-0 translate-middle badge rounded-pill bg-pink">
+                    3
+
+                  </span>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+
+                      <div class="d-flex flex-column">
+                        <span class="text-size-14 color-pink text-style-bold align-middle p-2">Unstaking on
+                          Progress</span>
+                        <span class="text-size-12 text-color-white text-style-normal align-middle p-2">1.505
+                          DASH</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="text-size-14 text-color-grey text-style-normal align-right p-2">ETA</span>
+                        <span class="text-size-12 text-color-white text-style-normal align-right p-2">28 June
+                          2021</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <span
+                  class="link-text text-size-14 font-weight-bold align-self-lg-start align-self-sm-end color-purple">View
+                  My
+                  Tansacation</span>
+
+                <!-- <div class="Watch-Staking-Video align-top align-right">
+                  <span>View My Transactions</span>
+                </div> -->
               </div>
+
               <div class="d-none d-md-block d-lg-block">
                 <div class="d-flex bd-highlight mts-5">
                   <div class="col">
@@ -1152,6 +1196,104 @@
       </div>
     </div>
     <!-- End of Modal-->
+
+    <!-- Modal Unstake Progress List-->
+    <div class="modal fade" id="modalUnstakeProgressList" tabindex="-1" aria-labelledby="modalUnstakeProgressList"
+      aria-hidden="true" style="display: none">
+      <div class="modal-dialog modal-lg modal-dialog-centered w-75">
+        <div class="modal-content bg-triv-modal  modal-full-height">
+
+          <div class="modal-body">
+            <!-- Content Modal-->
+            <div class="text-center ">
+
+
+              <div class="d-flex flex-column mt-5">
+                <h3 clas="text-style-normal text-color-white py-5">3 Unstaking in on progress</h3>
+                <div
+                  class="card card-panel-small mt-5 panel-width align-self-md-center align-self-lg-center align-self-auto">
+
+                  <div class="card-body minW">
+                    <div class=" d-flex justify-content-between">
+
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 color-pink text-style-bold align-left p-2">Unstaking on
+                          Progress</span>
+                        <span class="txtinpop ext-size-12 text-color-white text-style-normal align-left p-2">1.505
+                          DASH</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 text-color-grey text-style-normal align-right p-2">ETA</span>
+                        <span class="txtinpop text-size-12 text-color-white text-style-normal align-right p-2">28 June
+                          2021</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
+
+                  <div class="card-body minW">
+                    <div class=" d-flex justify-content-between">
+
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 color-pink text-style-bold align-left p-2">Unstaking on
+                          Progress</span>
+                        <span class="txtinpop ext-size-12 text-color-white text-style-normal align-left p-2">1.505
+                          DASH</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 text-color-grey text-style-normal align-right p-2">ETA</span>
+                        <span class="txtinpop text-size-12 text-color-white text-style-normal align-right p-2">28 June
+                          2021</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
+
+                  <div class="card-body minW">
+                    <div class=" d-flex justify-content-between">
+
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 color-pink text-style-bold align-left p-2">Unstaking on
+                          Progress</span>
+                        <span class="txtinpop ext-size-12 text-color-white text-style-normal align-left p-2">1.505
+                          DASH</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="txtinpop text-size-14 text-color-grey text-style-normal align-right p-2">ETA</span>
+                        <span class="txtinpop text-size-12 text-color-white text-style-normal align-right p-2">28 June
+                          2021</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <span class="text-size-12 minW text-style-normal align-self-center text-color-grey mts-5">Duis aute
+                  irure dolor in
+                  reprehenderit
+                  in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+              </div>
+            </div>
+            <!-- End of Content Modal-->
+          </div>
+          <div class="modal-footer-center">
+
+            <button type="button" class="btn btn-dark btn-full-pop" data-bs-dismiss="modal"
+              onclick="hideModalUnstakeProgress()">Close</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal Unstake Progress List-->
   </div>
   <script src="js/trivorigin/application-triv.js"></script>
   <script src="js/popper.js"></script>
@@ -1162,6 +1304,13 @@
     }
     function hideModal() {
       $("#customTrivFullscreenModal").modal("hide"); // you can try comment this code, because bootstrap maybe open modal
+    }
+
+    function showModalUnstakeProgress() {
+      $("#modalUnstakeProgressList").modal().show(); // you can try comment this code, because bootstrap maybe open modal
+    }
+    function hideModalUnstakeProgress() {
+      $("#modalUnstakeProgressList").modal("hide"); // you can try comment this code, because bootstrap maybe open modal
     }
     $('[data-toggle="tooltip"]').each(function () {
       var options = {

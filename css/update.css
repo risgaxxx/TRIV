@@ -1,0 +1,206 @@
+/*** Pulse Dot **/
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff6d87;
+  color: #ff6d87;
+  box-shadow: 9999px 0 0 -5px #ff6d87;
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ff6d87;
+  color: #ff6d87;
+}
+
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px #ff6d87;
+  animation: dotPulseBefore 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px #ff6d87;
+  animation: dotPulseAfter 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: 9984px 0 0 -5px #ff6d87;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px #ff6d87;
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px #ff6d87;
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px #ff6d87;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px #ff6d87;
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px #ff6d87;
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: 10014px 0 0 -5px #ff6d87;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px #ff6d87;
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px #ff6d87;
+  }
+}
+
+/*** End of Pulse Dot **/
+
+@media (min-width: 600px) {
+  .panel-container {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .block-staking-progress .card {
+    border: transparent;
+    border-radius: 8px;
+    background-color: #14171f;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .card.card-panel-small {
+    display: inline-block;
+    background-color: #14171f;
+    border-radius: 8px;
+    border: none !important;
+  }
+
+  .badge-staking-progress {
+    position: absolute;
+    float: inline-end;
+    right: 1rem;
+    top: 1rem;
+  }
+  .card-panel-small .card-body {
+    background-color: #14171f;
+    border-radius: 8px;
+    border: none !important;
+    padding: 20px 30px 10px 20px;
+  }
+  .card-panel-small .card-body:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(to left, #ff6d87, #8e71f3);
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+  }
+  .block-staking-progress span.link-text {
+    width: auto;
+    margin-right: 2rem;
+    text-align: right;
+  }
+  .bg-pink {
+    background-color: #ff6d87;
+  }
+  .minW {
+    max-width: 400px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .panel-container {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .minW {
+    min-width: 100%;
+  }
+  .btn-full-pop {
+    width: 100%;
+    text-align: center;
+  }
+  .modal-full-height {
+    height: 100vh;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 10%;
+  }
+
+  .block-staking-progress .card {
+    border: transparent;
+    border-radius: 8px;
+    background-color: #14171f;
+    margin: 0;
+  }
+  .card.card-panel-small {
+    display: inline-block;
+    background-color: #14171f;
+    border-radius: 8px;
+    border: none !important;
+  }
+  .card-panel-small .card-body {
+    background-color: #14171f;
+    border-radius: 8px;
+    border: none !important;
+  }
+
+  .modal-body .card-panel-small .card-body {
+    padding: 0.2rem 0.5rem;
+  }
+  .card-panel-small .card-body:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(to left, #ff6d87, #8e71f3);
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+  }
+  .card-panel-small .badge-staking-progress {
+    position: absolute;
+    float: right;
+    right: 0;
+    margin: 0.5rem;
+  }
+
+  .block-staking-progress span.link-text {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: right;
+  }
+  .card-panel-small .card-body span.txtinpop {
+    font-size: 12px;
+  }
+  .bg-pink {
+    background-color: #ff6d87;
+  }
+}
