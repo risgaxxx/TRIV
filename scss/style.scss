@@ -1,0 +1,753 @@
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".eot");
+    src: url($font-file + ".eot?#iefix") format("embedded-opentype"),
+      url($font-file + ".woff") format("woff"),
+      url($font-file + ".ttf") format("truetype"),
+      url($font-file + ".svg#" + $font-family) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font("Avenir", "../font/Avenir Regular");
+@include font("Arvo-Bold", "../font/Metropolis-Regular");
+
+$font-family: Avenir;
+
+// Units Variable
+$sizeRem1: 1rem;
+$sizeRem2: 2rem;
+$sizeRem3: 3rem;
+$sizeRem4: 4rem;
+$sizeRem5: 5rem;
+$sizeRem6: 6rem;
+$sizeRem7: 7rem;
+$sizeRem8: 8rem;
+$sizeRem9: 9rem;
+$sizeRem10: 10rem;
+
+// Color Variable
+$colorMain: #009ae1;
+$colorWhite: #ffffff;
+$colorGrey: #9ca7be;
+$colorGreen: #75e0a2;
+$colorRed: #ff6d87;
+$colorLink: #3189c6;
+$colorDarkGrey: #515151;
+$colorDark: #1d1d1d;
+$colorDarker: #252525;
+
+//Border Width Variable
+$borderSize1: 1px;
+$borderSize2: 2px;
+$borderSize3: 3px;
+$borderSize4: 4px;
+$borderSize5: 5px;
+$borderSize6: 6px;
+
+//Padding Variable
+$paddingSize1: 1px;
+$paddingSize2: 2px;
+$paddingSize3: 3px;
+$paddingSize4: 4px;
+$paddingSize5: 5px;
+$paddingSize6: 6px;
+$paddingSize8: 8px;
+$paddingSize9: 9px;
+$paddingSize10: 10px;
+$paddingSize11: 11px;
+$paddingSize12: 12px;
+$paddingSize13: 13px;
+$paddingSize14: 14px;
+$paddingSize15: 15px;
+$paddingSize16: 16px;
+$paddingSize17: 17px;
+$paddingSize18: 18px;
+$paddingSize19: 19px;
+$paddingSize20: 20px;
+$paddingSize21: 21px;
+$paddingSize22: 22px;
+$paddingSize23: 23px;
+$paddingSize24: 24px;
+
+// Margin Variable
+$marginSize0: 0px;
+$marginSize1: 1px;
+$marginSize2: 2px;
+$marginSize3: 3px;
+$marginSize4: 4px;
+$marginSize5: 5px;
+$marginSize6: 6px;
+$marginSize8: 8px;
+$marginSize9: 9px;
+$marginSize10: 10px;
+$marginSize11: 11px;
+$marginSize12: 12px;
+$marginSize13: 13px;
+$marginSize14: 14px;
+$marginSize15: 15px;
+$marginSize16: 16px;
+$marginSize17: 17px;
+$marginSize18: 18px;
+$marginSize19: 19px;
+$marginSize20: 20px;
+$marginSize21: 21px;
+$marginSize22: 22px;
+$marginSize23: 23px;
+$marginSize24: 24px;
+
+//Percentage Variable
+$percent5: 5%;
+$percent10: 10%;
+$percent15: 15%;
+$percent20: 20%;
+
+//Border Radius Variable
+$borderRadius4: 4px;
+$borderRadius5: 5px;
+$borderRadius8: 8px;
+$borderRadius10: 10px;
+$borderRadius12: 12px;
+$borderRadius15: 15px;
+$borderRadius16: 16px;
+$borderRadius20: 20px;
+$borderRadius24: 24px;
+
+//Font Size Variable
+$fontSize8: 8px;
+$fontSize9: 9px;
+$fontSize10: 10px;
+$fontSize11: 11px;
+$fontSize12: 12px;
+$fontSize13: 13px;
+$fontSize14: 14px;
+$fontSize15: 15px;
+$fontSize16: 16px;
+$fontSize17: 17px;
+$fontSize18: 18px;
+$fontSize19: 19px;
+$fontSize20: 20px;
+$fontSize21: 21px;
+$fontSize22: 22px;
+$fontSize23: 23px;
+$fontSize24: 24px;
+$fontSize25: 25px;
+$fontSize26: 26px;
+$fontSize27: 27px;
+$fontSize28: 28px;
+$fontSize29: 29px;
+$fontSize30: 30px;
+$fontSize31: 31px;
+$fontSize32: 32px;
+$fontSize33: 33px;
+$fontSize34: 34px;
+$fontSize35: 35px;
+$fontSize36: 36px;
+$fontSize37: 37px;
+$fontSize38: 38px;
+$fontSize39: 39px;
+$fontSize40: 40px;
+$fontSize42: 42px;
+$fontSize43: 43px;
+$fontSize44: 44px;
+$fontSize45: 45px;
+$fontSize46: 46px;
+
+// Font Weights Variable
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+// Mixin Component
+
+@mixin primary-button-rounded() {
+  border-radius: $borderRadius5;
+  background-color: $colorMain;
+  color: $colorWhite;
+  font-size: $fontSize14;
+}
+
+html,
+body {
+  font-family: $font-family;
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+}
+
+a {
+  color: $colorLink;
+  text-decoration: none;
+}
+
+.bg-grey {
+  background-color: $colorDarkGrey;
+}
+.bg-dark {
+  background-color: $colorDarker;
+}
+.bg-skew {
+  transform: skew(0deg, -3deg);
+  background: rgb(61, 194, 255);
+  background: linear-gradient(
+    142deg,
+    rgba(61, 194, 255, 1) 5%,
+    rgba(44, 105, 199, 1) 46%,
+    rgba(61, 194, 255, 1) 100%
+  );
+  position: relative;
+  top: -5rem;
+}
+
+.bg-skew-iner {
+  margin-top: $sizeRem5;
+  margin-bottom: $sizeRem5;
+  transform: skew(0deg, 3deg);
+  text-align: center;
+  color: #fff;
+}
+.align-left-center {
+  align-items: flex-start;
+  text-align: start;
+  justify-content: start;
+}
+.section-area {
+  max-width: 100vw;
+  padding-right: $sizeRem10;
+  padding-left: $sizeRem10;
+  padding-top: $sizeRem2;
+  padding-bottom: $sizeRem2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section-area-outset {
+  position: relative;
+  max-width: 100vw;
+  margin-top: -10%;
+  z-index: 99;
+  padding-right: $sizeRem10;
+  padding-left: $sizeRem10;
+  padding-top: $sizeRem2;
+  padding-bottom: $sizeRem2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wrap90 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrap80 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.wrap70 {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.wrap60 {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.wrap50 {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/**** Crypro Detail Style ***/
+
+.cryptoDetailSection1 {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .icon {
+    width: 50px;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: left;
+  }
+  .list-logo {
+    img {
+      width: auto;
+      height: 60px;
+    }
+  }
+
+  button {
+    .btn-primary {
+      padding: 12px 20px;
+      @include primary-button-rounded();
+    }
+  }
+}
+
+.cryptoDetailSection2 {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .card {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: $sizeRem5;
+    img {
+      padding-bottom: $sizeRem1;
+    }
+    .card-title {
+      color: $colorWhite;
+    }
+    .card-text {
+      color: $colorGrey;
+    }
+  }
+}
+
+.cryptoDetailSection3 {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h1 {
+    color: $colorWhite;
+    font-weight: $light-weight;
+  }
+  h5 {
+    color: $colorWhite;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+
+  button {
+    .btn-primary {
+      @include primary-button-rounded();
+    }
+  }
+}
+.cryptoDetailSection4 {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: left;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+  .d-flex {
+    padding-left: $sizeRem5;
+    padding-right: $sizeRem5;
+  }
+  button {
+    width: 100%;
+    .btn-primary {
+      @include primary-button-rounded();
+    }
+  }
+
+  .card {
+    background-color: transparent;
+    border-color: transparent;
+
+    .card-body {
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: $sizeRem1;
+    }
+    h1 {
+      color: $colorWhite;
+      font-size: 60px;
+      font-weight: $thin-weight;
+      text-align: center;
+    }
+    h3 {
+      color: $colorWhite;
+      font-size: $fontSize24;
+    }
+
+    .card-text {
+      color: $colorGrey;
+      text-align: start;
+    }
+
+    .note {
+      font-size: $fontSize12;
+      font-weight: $thin-weight;
+      color: #ff936a;
+      text-align: start;
+    }
+  }
+}
+
+.cryptoDetailSection5 {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: left;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+  .img-container {
+    max-height: 80%;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    bottom: 0;
+  }
+}
+
+.cryptoDetailSectionBanner {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: start;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .icon {
+    width: 50px;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+}
+
+/**** End Crypro Detail Style ***/
+
+/*** Break Point ****/
+
+@media (max-width: 576px) {
+  .section-area {
+    max-width: 100vw;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .section-area-outset {
+    position: relative;
+    max-width: 100vw;
+    margin-top: -15%;
+    z-index: 99;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+  span,
+  p {
+    text-align: center;
+  }
+  .align-left-center {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wrap90 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap80 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap70 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap60 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap50 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bg-skew-iner {
+    margin-top: $sizeRem2;
+    margin-bottom: $sizeRem2;
+    transform: skew(0deg, 3deg);
+    text-align: center;
+    color: #fff;
+  }
+
+  /** Section 1**/
+
+  .cryptoDetailSection1 {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+    .desc {
+      text-align: center;
+    }
+    img {
+      padding-top: $sizeRem3;
+      padding-bottom: $sizeRem3;
+    }
+  }
+
+  /*** Section 2 ***/
+  .cryptoDetailSection2 {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+    .desc {
+      text-align: center;
+    }
+    img {
+      padding-top: $sizeRem3;
+      padding-bottom: $sizeRem3;
+    }
+
+    .card {
+      background-color: transparent;
+      border-color: transparent;
+      margin-top: 0rem;
+    }
+  }
+
+  /*** Section 3 ****/
+  .cryptodetailsection3 {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /*** Section 4 ****/
+  .cryptoDetailSection4 {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .card {
+      h1 {
+        color: $colorWhite;
+        font-weight: $thin-weight;
+        text-align: center;
+      }
+      h3 {
+        color: $colorWhite;
+        font-size: $fontSize22;
+      }
+    }
+    img {
+      margin-top: $sizeRem2;
+      margin-bottom: $sizeRem5;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      margin-top: $sizeRem2;
+    }
+  }
+
+  /** Section 5 **/
+  .cryptoDetailSection5 {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .img-container {
+      margin-top: $sizeRem5;
+    }
+  }
+  /** Section Banner **/
+  .cryptoDetailSectionBanner {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .img-container {
+      margin-top: $sizeRem5;
+    }
+  }
+}
+@media (min-width: 768px) {
+}
