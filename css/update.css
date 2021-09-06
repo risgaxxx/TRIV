@@ -1,5 +1,6 @@
 /*** Pulse Dot **/
 .dot-pulse {
+  cursor: pointer;
   position: relative;
   left: -9999px;
   width: 10px;

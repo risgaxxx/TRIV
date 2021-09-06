@@ -1,0 +1,722 @@
+// Font Family
+@font-face {
+  font-family: "Avenir";
+  src: url("../font/Avenir\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Metropolis-Regular.woff2") format("woff2"),
+    url("../font/Metropolis-Regular.woff") format("woff");
+}
+
+$font-primary: "Avenir", sans-serif;
+$font-secondary: "Metropolis", sans-serif;
+
+// Color Variable
+$colorMain: #009ae1;
+$colorWhite: #ffffff;
+$colorGrey: #9ca7be;
+$colorGreen: #75e0a2;
+$colorRed: #ff6d87;
+$colorLink: #3189c6;
+$colorDarkGrey: #515151;
+$colorDark: #1d1d1d;
+$colorCard: rgba(0, 154, 225, 0.2);
+
+//Border Width Variable
+$borderSize1: 1px;
+$borderSize2: 2px;
+$borderSize3: 3px;
+$borderSize4: 4px;
+$borderSize5: 5px;
+$borderSize6: 6px;
+
+//Padding Variable
+$paddingSize1: 1px;
+$paddingSize2: 2px;
+$paddingSize3: 3px;
+$paddingSize4: 4px;
+$paddingSize5: 5px;
+$paddingSize6: 6px;
+$paddingSize8: 8px;
+$paddingSize9: 9px;
+$paddingSize10: 10px;
+$paddingSize11: 11px;
+$paddingSize12: 12px;
+$paddingSize13: 13px;
+$paddingSize14: 14px;
+$paddingSize15: 15px;
+$paddingSize16: 16px;
+$paddingSize17: 17px;
+$paddingSize18: 18px;
+$paddingSize19: 19px;
+$paddingSize20: 20px;
+$paddingSize21: 21px;
+$paddingSize22: 22px;
+$paddingSize23: 23px;
+$paddingSize24: 24px;
+
+// Margin Variable
+$marginSize0: 0px;
+$marginSize1: 1px;
+$marginSize2: 2px;
+$marginSize3: 3px;
+$marginSize4: 4px;
+$marginSize5: 5px;
+$marginSize6: 6px;
+$marginSize8: 8px;
+$marginSize9: 9px;
+$marginSize10: 10px;
+$marginSize11: 11px;
+$marginSize12: 12px;
+$marginSize13: 13px;
+$marginSize14: 14px;
+$marginSize15: 15px;
+$marginSize16: 16px;
+$marginSize17: 17px;
+$marginSize18: 18px;
+$marginSize19: 19px;
+$marginSize20: 20px;
+$marginSize21: 21px;
+$marginSize22: 22px;
+$marginSize23: 23px;
+$marginSize24: 24px;
+
+//Percentage Variable
+$percent5: 5%;
+$percent10: 10%;
+$percent15: 15%;
+$percent20: 20%;
+
+//Border Radius Variable
+$borderRadius4: 4px;
+$borderRadius5: 5px;
+$borderRadius8: 8px;
+$borderRadius10: 10px;
+$borderRadius12: 12px;
+$borderRadius15: 15px;
+$borderRadius16: 16px;
+$borderRadius20: 20px;
+$borderRadius24: 24px;
+
+//Font Size Variable
+$fontSize8: 8px;
+$fontSize9: 9px;
+$fontSize10: 10px;
+$fontSize11: 11px;
+$fontSize12: 12px;
+$fontSize13: 13px;
+$fontSize14: 14px;
+$fontSize15: 15px;
+$fontSize16: 16px;
+$fontSize17: 17px;
+$fontSize18: 18px;
+$fontSize19: 19px;
+$fontSize20: 20px;
+$fontSize21: 21px;
+$fontSize22: 22px;
+$fontSize23: 23px;
+$fontSize24: 24px;
+$fontSize25: 25px;
+$fontSize26: 26px;
+$fontSize27: 27px;
+$fontSize28: 28px;
+$fontSize29: 29px;
+$fontSize30: 30px;
+$fontSize31: 31px;
+$fontSize32: 32px;
+$fontSize33: 33px;
+$fontSize34: 34px;
+$fontSize35: 35px;
+$fontSize36: 36px;
+$fontSize37: 37px;
+$fontSize38: 38px;
+$fontSize39: 39px;
+$fontSize40: 40px;
+$fontSize42: 42px;
+$fontSize43: 43px;
+$fontSize44: 44px;
+$fontSize45: 45px;
+$fontSize46: 46px;
+
+// Font Weights Variable
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+// Mixin Component
+
+@mixin primary-button-rounded() {
+  border-radius: $borderRadius5;
+  background-color: $colorMain;
+  color: $colorWhite;
+  font-size: $fontSize14;
+  padding: 8px 20px;
+}
+
+html,
+body {
+  font-family: $font-primary;
+
+  z-index: -99;
+}
+
+a {
+  color: $colorLink;
+  text-decoration: none;
+}
+section {
+  margin: 0px;
+  padding: 0px;
+}
+
+.HeaderMainColor {
+  color: $colorMain;
+  opacity: 1;
+}
+hr.style12 {
+  height: 1 px;
+  background-image: linear-gradient(
+    to right,
+    rgba(45, 52, 90, 0),
+    #596493 50%,
+    rgba(45, 52, 90, 0)
+  );
+}
+
+.homepage-section-1 {
+  h1 {
+    color: $colorMain;
+    font-size: $fontSize35;
+    font-weight: $light-weight;
+    max-width: 90%;
+  }
+  h2 {
+    color: $colorGrey;
+    font-size: $fontSize18;
+    font-weight: $light-weight;
+    max-width: 90%;
+  }
+  button {
+    @include primary-button-rounded();
+  }
+}
+
+.containerHomePageSection2 {
+  width: 100%;
+  height: auto;
+  background: url(../img/homepage/rectangle-copy-14.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: $percent5;
+  padding-bottom: $percent5;
+}
+.containerHomePageSection4 {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/homepage/group-10.svg);
+  background-size: 100% auto;
+  background-color: $colorDarkGrey;
+  background-repeat: no-repeat;
+  padding-top: $percent10;
+}
+.containerHomePageSection5 {
+  width: 100%;
+  height: auto;
+  background-color: #252525;
+  padding-top: $percent10;
+  padding-bottom: $percent10;
+  h1 {
+    color: $colorWhite;
+    font-size: $fontSize24;
+    font-weight: $light-weight;
+  }
+}
+
+.homepage-section-2 {
+  width: 100%;
+  h1 {
+    color: $colorMain;
+    font-size: $fontSize30;
+    font-weight: $light-weight;
+  }
+  h2 {
+    color: $colorGrey;
+    font-size: $fontSize18;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .icon {
+    width: 50px;
+  }
+  .title {
+    font-size: $fontSize18;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: $fontSize16;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    span {
+      font-weight: $bold-weight;
+      color: $colorWhite;
+    }
+  }
+}
+
+.homepage-section-3 {
+  clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
+  width: 100%;
+  h1 {
+    color: $colorMain;
+    font-size: $fontSize30;
+    font-weight: $light-weight;
+  }
+  h2 {
+    color: $colorWhite;
+    font-size: $fontSize20;
+    font-weight: $light-weight;
+    margin-top: 1rem;
+  }
+  .desc {
+    font-size: $fontSize16;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+  }
+}
+
+.homepage-section-4 {
+  h1 {
+    color: $colorMain;
+    font-size: $fontSize30;
+    font-weight: $light-weight;
+  }
+  h2 {
+    color: $colorWhite;
+    font-size: $fontSize20;
+    font-weight: $light-weight;
+    margin-top: 1rem;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: $fontSize16;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.homepage-section-5 {
+  h1 {
+    color: $colorWhite;
+    font-size: $fontSize24;
+    font-weight: $light-weight;
+  }
+  h2 {
+    color: $colorWhite;
+    font-size: $fontSize20;
+    font-weight: $light-weight;
+    margin-top: 1rem;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: $fontSize16;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.homepage-section-1 {
+  .card-no-tab {
+    border-radius: $borderRadius10;
+    .card-body {
+      .list-group a:hover {
+        background-color: transparent;
+        border: 1px solid #353c4a;
+        border-radius: $borderRadius5;
+      }
+
+      .list-transparent {
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: $paddingSize8;
+        border-radius: $borderRadius5;
+      }
+
+      .asset-name {
+        font-weight: $normal-weight;
+        color: $colorWhite;
+        font-size: $fontSize14;
+        margin-left: $marginSize8;
+      }
+
+      .asset-changes-up {
+        color: $colorGreen;
+        font-size: $fontSize14;
+        align-self: flex-end;
+      }
+      .asset-changes-down {
+        color: $colorRed;
+        font-size: $fontSize14;
+        align-self: flex-end;
+      }
+
+      .asset-amount {
+        color: $colorGrey;
+        font-size: $fontSize14;
+        font-weight: $normal-weight;
+        align-self: flex-end;
+      }
+    }
+
+    .card-footer {
+      background-color: transparent !important;
+      padding: $paddingSize14;
+      border: none;
+      text-align: center;
+      align-items: center;
+      a {
+        padding: 0;
+        border: none;
+        text-align: center;
+        font-size: $fontSize12;
+        font-weight: $semibold-weight;
+      }
+      .card-link {
+        justify-content: center;
+        min-height: auto;
+        padding: $paddingSize8;
+      }
+    }
+  }
+}
+
+p {
+  margin-bottom: $marginSize0;
+}
+
+.containerHomePageSection1 {
+  position: relative;
+  padding-top: 10%;
+  z-index: 10;
+  width: 100%;
+  height: max-content;
+  margin-bottom: 10%;
+  z-index: 100;
+}
+
+.card-no-tab {
+  background-color: rgba(33, 39, 52, 0.84);
+  font-family: $font-secondary;
+  .card-header {
+    background-color: $colorMain;
+    border-top-left-radius: $borderRadius10;
+    border-top-right-radius: $borderRadius10;
+  }
+  .asset-name {
+    font-size: $fontSize12;
+    color: $colorWhite;
+    font-weight: $thin-weight;
+  }
+  .asset-price {
+    font-size: $fontSize32;
+    color: $colorWhite;
+    font-weight: $xbold-weight;
+  }
+  .asset-currency {
+    font-size: $fontSize14;
+    color: $colorWhite;
+    font-weight: $xbold-weight;
+    margin-left: $marginSize4;
+  }
+  .asset-changes-up {
+    color: $colorGreen;
+    font-size: $fontSize16;
+  }
+  .asset-changes-down {
+    color: $colorRed;
+    font-size: $fontSize16;
+  }
+}
+
+.sectionHomepage1 {
+  margin-top: $percent5;
+}
+
+.containerHomePageSection3 {
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+  .container {
+    padding-bottom: $percent5;
+    padding-top: $percent5;
+  }
+  p.title {
+    color: $colorLink;
+    text-align: center;
+    align-self: center;
+  }
+}
+/*** Container ***/
+
+mts-5 {
+  margin-top: $marginSize5;
+}
+/*** End of Container ***/
+
+/*** GraysCale Logo***/
+
+img.logograyscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  opacity: 0.5;
+}
+
+img.logograyscale:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: none;
+}
+/*** GraysCale Logo***/
+
+/*** Brick Slider **/
+.slider-container {
+  width: 100%;
+  height: 400px;
+  background-color: transparent;
+
+  .card {
+    .card-body {
+      text-align: center;
+      h1 {
+        font-size: $fontSize18;
+        color: #b7c4de;
+      }
+    }
+  }
+}
+
+//variables for text animation
+
+.animation-wrapper1 {
+  text-align: center;
+  height: 400px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  color: #212121;
+
+  // .marquee1 {
+  //   padding-top: 5rem;
+  //   padding-bottom: 10rem;
+  // }
+
+  // .marquee3 {
+  //   padding-top: 5rem;
+  //   padding-bottom: 10rem;
+  // }
+  .card {
+    background-color: rgba(0, 154, 225, 0.2);
+    box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+    .card-body {
+      text-align: center;
+
+      h1 {
+        font-size: $fontSize18;
+        color: #b7c4de;
+      }
+    }
+  }
+}
+
+.animation-wrapper2 {
+  text-align: center;
+  height: 400px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  color: #212121;
+
+  .marquee2 {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
+  .card {
+    background-color: rgba(0, 154, 225, 0.2);
+    box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(108, 176, 235, 0.45);
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+    .card-body {
+      text-align: center;
+
+      h1 {
+        font-size: $fontSize18;
+        color: #b7c4de;
+      }
+    }
+  }
+}
+
+.marquee1 {
+  width: 100%;
+  top: 10px;
+  position: relative;
+  box-sizing: border-box;
+  // animation: marquee1 10s linear infinite;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+@keyframes marquee1 {
+  from {
+    transform: translateY(-90%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.marquee2 {
+  width: 100%;
+  top: 20px;
+  position: relative;
+  box-sizing: border-box;
+  // animation: marquee2 10s linear infinite;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.marquee3 {
+  width: 100%;
+  height: 400px;
+  top: 10px;
+  position: relative;
+  box-sizing: border-box;
+  // animation: marquee3 10s linear infinite;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+@keyframes marquee3 {
+  from {
+    transform: translateY(-90%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: $colorCard;
+    -webkit-box-shadow: 0 0 3px $colorCard;
+  }
+  50% {
+    background-color: $colorMain;
+    -webkit-box-shadow: 0 0 40px $colorCard;
+  }
+  100% {
+    background-color: $colorCard;
+    -webkit-box-shadow: 0 0 3px $colorCard;
+  }
+}
+
+@-moz-keyframes glowing {
+  0% {
+    background-color: $colorCard;
+    -moz-box-shadow: 0 0 3px $colorCard;
+  }
+  50% {
+    background-color: $colorMain;
+    -moz-box-shadow: 0 0 40px $colorMain;
+  }
+  100% {
+    background-color: $colorCard;
+    -moz-box-shadow: 0 0 3px $colorCard;
+  }
+}
+
+@-o-keyframes glowing {
+  0% {
+    background-color: $colorCard;
+    box-shadow: 0 0 3px $colorCard;
+  }
+  50% {
+    background-color: $colorMain;
+    box-shadow: 0 0 40px $colorMain;
+  }
+  100% {
+    background-color: $colorCard;
+    box-shadow: 0 0 3px $colorCard;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: $colorCard;
+    box-shadow: 0 0 3px $colorCard;
+  }
+  50% {
+    background-color: $colorMain;
+    box-shadow: 0 0 40px $colorMain;
+  }
+  100% {
+    background-color: $colorCard;
+    box-shadow: 0 0 3px $colorCard;
+  }
+}

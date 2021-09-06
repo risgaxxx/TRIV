@@ -1,0 +1,1410 @@
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".eot");
+    src: url($font-file + ".eot?#iefix") format("embedded-opentype"),
+      url($font-file + ".woff") format("woff"),
+      url($font-file + ".ttf") format("truetype"),
+      url($font-file + ".svg#" + $font-family) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font("Avenir", "../font/Avenir Regular");
+@include font("Arvo-Bold", "../font/Metropolis-Regular");
+
+$font-family: Avenir;
+
+// Units Variable
+$sizeRem1: 1rem;
+$sizeRem2: 2rem;
+$sizeRem3: 3rem;
+$sizeRem4: 4rem;
+$sizeRem5: 5rem;
+$sizeRem6: 6rem;
+$sizeRem7: 7rem;
+$sizeRem8: 8rem;
+$sizeRem9: 9rem;
+$sizeRem10: 10rem;
+
+// Color Variable
+$colorMain: #009ae1;
+$colorWhite: #ffffff;
+$colorGrey: #9ca7be;
+$colorGreen: #75e0a2;
+$colorRed: #ff6d87;
+$colorLink: #3189c6;
+$colorDarkGrey: #515151;
+$colorDark: #1d1d1d;
+$colorDarker: #252525;
+
+//Border Width Variable
+$borderSize1: 1px;
+$borderSize2: 2px;
+$borderSize3: 3px;
+$borderSize4: 4px;
+$borderSize5: 5px;
+$borderSize6: 6px;
+
+//Padding Variable
+$paddingSize1: 1px;
+$paddingSize2: 2px;
+$paddingSize3: 3px;
+$paddingSize4: 4px;
+$paddingSize5: 5px;
+$paddingSize6: 6px;
+$paddingSize8: 8px;
+$paddingSize9: 9px;
+$paddingSize10: 10px;
+$paddingSize11: 11px;
+$paddingSize12: 12px;
+$paddingSize13: 13px;
+$paddingSize14: 14px;
+$paddingSize15: 15px;
+$paddingSize16: 16px;
+$paddingSize17: 17px;
+$paddingSize18: 18px;
+$paddingSize19: 19px;
+$paddingSize20: 20px;
+$paddingSize21: 21px;
+$paddingSize22: 22px;
+$paddingSize23: 23px;
+$paddingSize24: 24px;
+
+// Margin Variable
+$marginSize0: 0px;
+$marginSize1: 1px;
+$marginSize2: 2px;
+$marginSize3: 3px;
+$marginSize4: 4px;
+$marginSize5: 5px;
+$marginSize6: 6px;
+$marginSize8: 8px;
+$marginSize9: 9px;
+$marginSize10: 10px;
+$marginSize11: 11px;
+$marginSize12: 12px;
+$marginSize13: 13px;
+$marginSize14: 14px;
+$marginSize15: 15px;
+$marginSize16: 16px;
+$marginSize17: 17px;
+$marginSize18: 18px;
+$marginSize19: 19px;
+$marginSize20: 20px;
+$marginSize21: 21px;
+$marginSize22: 22px;
+$marginSize23: 23px;
+$marginSize24: 24px;
+
+//Percentage Variable
+$percent5: 5%;
+$percent10: 10%;
+$percent15: 15%;
+$percent20: 20%;
+
+//Border Radius Variable
+$borderRadius4: 4px;
+$borderRadius5: 5px;
+$borderRadius8: 8px;
+$borderRadius10: 10px;
+$borderRadius12: 12px;
+$borderRadius15: 15px;
+$borderRadius16: 16px;
+$borderRadius20: 20px;
+$borderRadius24: 24px;
+
+//Font Size Variable
+$fontSize8: 8px;
+$fontSize9: 9px;
+$fontSize10: 10px;
+$fontSize11: 11px;
+$fontSize12: 12px;
+$fontSize13: 13px;
+$fontSize14: 14px;
+$fontSize15: 15px;
+$fontSize16: 16px;
+$fontSize17: 17px;
+$fontSize18: 18px;
+$fontSize19: 19px;
+$fontSize20: 20px;
+$fontSize21: 21px;
+$fontSize22: 22px;
+$fontSize23: 23px;
+$fontSize24: 24px;
+$fontSize25: 25px;
+$fontSize26: 26px;
+$fontSize27: 27px;
+$fontSize28: 28px;
+$fontSize29: 29px;
+$fontSize30: 30px;
+$fontSize31: 31px;
+$fontSize32: 32px;
+$fontSize33: 33px;
+$fontSize34: 34px;
+$fontSize35: 35px;
+$fontSize36: 36px;
+$fontSize37: 37px;
+$fontSize38: 38px;
+$fontSize39: 39px;
+$fontSize40: 40px;
+$fontSize42: 42px;
+$fontSize43: 43px;
+$fontSize44: 44px;
+$fontSize45: 45px;
+$fontSize46: 46px;
+
+// Font Weights Variable
+$hairline-weight: 100;
+$thin-weight: 200;
+$light-weight: 300;
+$normal-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
+$bold-weight: 700;
+$xbold-weight: 800;
+$black-weight: 900;
+
+// Mixin Component
+
+@mixin primary-button-rounded() {
+  border-radius: $borderRadius5;
+  background-color: $colorMain;
+  color: $colorWhite;
+  font-size: $fontSize14;
+}
+
+html,
+body {
+  font-family: $font-family;
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+}
+
+a {
+  color: $colorLink;
+  text-decoration: none;
+}
+
+.bg-grey {
+  background-color: $colorDarkGrey;
+}
+.bg-dark {
+  background-color: $colorDarker;
+}
+
+.bg-skew {
+  transform: skew(0deg, -3deg);
+  background: rgb(61, 194, 255);
+  background: linear-gradient(
+    142deg,
+    rgba(61, 194, 255, 1) 5%,
+    rgba(44, 105, 199, 1) 46%,
+    rgba(61, 194, 255, 1) 100%
+  );
+  position: relative;
+  top: -5rem;
+}
+
+.bg-skew-iner {
+  margin-top: $sizeRem5;
+  margin-bottom: $sizeRem5;
+  transform: skew(0deg, 3deg);
+  text-align: center;
+  color: #fff;
+}
+.align-left-center {
+  align-items: flex-start;
+  text-align: start;
+  justify-content: start;
+}
+
+.section-area {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  padding-right: $sizeRem10;
+  padding-left: $sizeRem10;
+  text-align: center;
+}
+
+.section-area-particle {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  margin: 0 auto;
+  padding-top: $percent10;
+  padding-bottom: $percent10;
+  background-image: url("../img/homepage/bg_particles.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.bg-homepagesection2 {
+  background: url(../img/homepage/bg_hompage_2.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-homepagesection5 {
+  background: url(../img/homepage/bg_homepagesection5.png) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+
+  z-index: 1;
+}
+.bg-homepagesection6 {
+  background-color: #252525;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.section-area-outset {
+  position: relative;
+  max-width: 100vw;
+  margin-top: -10%;
+  z-index: 99;
+  padding-right: $sizeRem10;
+  padding-left: $sizeRem10;
+  padding-top: $sizeRem2;
+  padding-bottom: $sizeRem2;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wrap90 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrap80 {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.wrap70 {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.wrap60 {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.wrap50 {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/*** Particle Style **/
+
+#particles-js {
+  top: 0;
+  display: block;
+  overflow: auto;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  // background-color: #000000;
+  // background-image: url("../img/homepage/bg_particles.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 50% 50%;
+}
+
+/*** End Particle Style **/
+
+/*** Scroll Mouse **/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  bottom: 10px;
+  margin-top: -35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+@media (max-width: 767px) {
+  .icon-scroll {
+    position: relative;
+  }
+}
+.icon-scroll:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+/** End of scroll Mouse **/
+
+/***** Homepage Style ***/
+.homepageSection1 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  background-color: transparent;
+  position: relative;
+  padding-top: $percent5;
+  padding-bottom: $percent5;
+  z-index: 1;
+  h2 {
+    color: $colorMain;
+    text-align: left;
+  }
+  h4 {
+    color: $colorWhite;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .card-no-tab {
+    border-radius: $borderRadius10;
+    background-color: rgba(33, 39, 52, 0.84);
+
+    .card-header {
+      background-color: $colorMain;
+      border-top-left-radius: $marginSize10;
+      border-top-right-radius: $marginSize10;
+      .asset-name {
+        font-size: 12px;
+        color: #ffffff;
+        font-weight: 200;
+      }
+      .asset-price {
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: 800;
+      }
+      .asset-currency {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 800;
+        margin-left: 4px;
+      }
+      .asset-changes-up {
+        color: #75e0a2;
+        font-size: 16px;
+      }
+    }
+    .card-body {
+      .list-group a:hover {
+        background-color: transparent;
+        border: 1px solid #353c4a;
+        border-radius: $borderRadius5;
+      }
+
+      .list-transparent {
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: $paddingSize8;
+        border-radius: $borderRadius5;
+      }
+
+      .asset-name {
+        font-weight: $normal-weight;
+        color: $colorWhite;
+        font-size: $fontSize14;
+        margin-left: $marginSize8;
+      }
+
+      .asset-changes-up {
+        color: $colorGreen;
+        font-size: $fontSize14;
+        align-self: flex-end;
+      }
+      .asset-changes-down {
+        color: $colorRed;
+        font-size: $fontSize14;
+        align-self: flex-end;
+      }
+
+      .asset-amount {
+        color: $colorGrey;
+        font-size: $fontSize14;
+        font-weight: $normal-weight;
+        align-self: flex-end;
+      }
+    }
+
+    .card-footer {
+      background-color: transparent !important;
+      padding: $paddingSize14;
+      border: none;
+      text-align: center;
+      align-items: center;
+      a {
+        padding: 0;
+        border: none;
+        text-align: center;
+        font-size: $fontSize12;
+        font-weight: $semibold-weight;
+      }
+      .card-link {
+        justify-content: center;
+        min-height: auto;
+        padding: $paddingSize8;
+      }
+    }
+  }
+}
+
+.homepageSection2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  background-color: transparent;
+  margin-top: $percent10;
+  margin-bottom: $percent10;
+  text-align: left;
+
+  h2 {
+    color: $colorMain;
+    text-align: left;
+  }
+  h4 {
+    color: $colorWhite;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .d-flex {
+    width: 75%;
+    img {
+      width: 80px;
+    }
+    h5 {
+      color: $colorWhite;
+      text-align: left;
+      display: inline-block;
+    }
+    span {
+      color: $colorGrey;
+      text-align: left;
+    }
+    b {
+      font-weight: $bold-weight;
+      color: $colorWhite;
+    }
+  }
+}
+
+.homepageSection3 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  background-color: transparent;
+  margin-top: $percent5;
+  margin-bottom: $percent5;
+  text-align: center;
+
+  span {
+    color: $colorMain;
+    font-size: $fontSize18;
+  }
+
+  img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: 0.5s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: 0.5s ease-in-out;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-filter: grayscale(0%);
+    -moz-transition: 0.5s ease-in-out;
+    -o-filter: grayscale(0%);
+    -o-transition: 0.5s ease-in-out;
+  }
+}
+
+.homepageSection4 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  background-color: transparent;
+  margin-top: $percent5;
+  margin-bottom: $percent5;
+  text-align: left;
+
+  h2 {
+    color: $colorMain;
+  }
+
+  h4 {
+    color: $colorWhite;
+  }
+
+  span {
+    font-size: $fontSize16;
+    color: $colorGrey;
+  }
+}
+
+.homepageSection5 {
+  width: 100%;
+  height: 100%;
+  padding-top: $percent10;
+  padding-bottom: $percent10;
+
+  h2 {
+    color: $colorMain;
+    text-align: center;
+  }
+
+  h4 {
+    color: $colorWhite;
+    text-align: center;
+  }
+  span {
+    color: $colorWhite;
+    font-size: $fontSize18;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+.homepageSection6 {
+  width: 100%;
+  margin-top: $percent10;
+  margin-bottom: $percent10;
+  text-align: center;
+  h5 {
+    color: $colorWhite;
+  }
+  .card {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    .card-body {
+      margin-left: $percent5;
+      margin-right: $percent5;
+      padding: $percent10;
+      span {
+        color: $colorGrey;
+      }
+      .social-button {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        a {
+          text-align: center;
+          padding: 0.2rem;
+          align-self: center;
+          margin: 0 auto;
+          border-radius: 8px;
+
+          svg path {
+            padding: 0.2rem;
+            text-align: center;
+            align-items: center;
+            background-color: $colorMain;
+            fill: #ffffff;
+          }
+          label {
+            display: none;
+          }
+        }
+        a:hover {
+          border-radius: 8px;
+          background-color: $colorMain;
+          svg path {
+            padding: 0.2rem;
+            text-align: center;
+            align-items: center;
+            background-color: $colorMain;
+            fill: #ffffff;
+          }
+          label {
+            position: absolute;
+            z-index: 2;
+            margin: 0 auto;
+            padding-top: 0.7rem;
+            align-self: center;
+            text-align: center;
+            display: block;
+            color: $colorMain;
+            font-size: $fontSize12;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*** End of Homepage Style ***/
+
+/**** Crypro Detail Style ***/
+
+.cryptoDetailSection1 {
+  width: 100%;
+  padding-top: $percent10;
+  padding-bottom: $percent10;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .icon {
+    width: 50px;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: left;
+  }
+  .list-logo {
+    img {
+      width: auto;
+      height: 60px;
+    }
+  }
+
+  button {
+    .btn-primary {
+      padding: 12px 20px;
+      @include primary-button-rounded();
+    }
+  }
+}
+
+.cryptoDetailSection2 {
+  width: 100%;
+  padding-top: $percent10;
+  padding-bottom: $percent10;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .card {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: $sizeRem5;
+    img {
+      padding-bottom: $sizeRem1;
+    }
+    .card-title {
+      color: $colorWhite;
+    }
+    .card-text {
+      color: $colorGrey;
+    }
+  }
+}
+
+.cryptoDetailSection3 {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h1 {
+    color: $colorWhite;
+    font-weight: $light-weight;
+  }
+  h5 {
+    color: $colorWhite;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+
+  button {
+    .btn-primary {
+      @include primary-button-rounded();
+    }
+  }
+}
+.cryptoDetailSection4 {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: left;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+  .d-flex {
+    padding-left: $sizeRem5;
+    padding-right: $sizeRem5;
+  }
+  button {
+    width: 100%;
+    .btn-primary {
+      @include primary-button-rounded();
+    }
+  }
+
+  .card {
+    background-color: transparent;
+    border-color: transparent;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: $sizeRem1;
+    }
+    h1 {
+      color: $colorWhite;
+      font-size: 60px;
+      font-weight: $thin-weight;
+      text-align: center;
+    }
+    h3 {
+      color: $colorWhite;
+      font-size: $fontSize24;
+    }
+
+    .card-text {
+      color: $colorGrey;
+      text-align: start;
+    }
+
+    .note {
+      font-size: $fontSize12;
+      font-weight: $thin-weight;
+      color: #ff936a;
+      text-align: start;
+    }
+  }
+}
+
+.cryptoDetailSection5 {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: left;
+  }
+
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+    text-align: left;
+  }
+
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+  .img-container {
+    max-height: 80%;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    bottom: 0;
+  }
+}
+
+.cryptoDetailSectionBanner {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  h1 {
+    color: $colorMain;
+    font-weight: $light-weight;
+    font-size: $fontSize24;
+    text-align: start;
+  }
+  h2 {
+    font-size: $fontSize20;
+    color: $colorGrey;
+    font-weight: $light-weight;
+    margin-top: 2rem;
+  }
+  .icon {
+    width: 50px;
+  }
+  .title {
+    font-size: $fontSize20;
+    font-weight: $normal-weight;
+    color: $colorWhite;
+  }
+  .desc {
+    font-size: $fontSize14;
+    font-weight: $normal-weight;
+    color: $colorGrey;
+    text-align: start;
+  }
+}
+
+/**** End Crypro Detail Style ***/
+
+/*** Break Point ****/
+
+@media (max-width: 576px) {
+  .section-area {
+    max-width: 100vw;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .section-area-outset {
+    position: relative;
+    max-width: 100vw;
+    margin-top: -15%;
+    z-index: 99;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+  span,
+  p {
+    text-align: center;
+  }
+  .align-left-center {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wrap90 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap80 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap70 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap60 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .wrap50 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .bg-skew-iner {
+    margin-top: $sizeRem2;
+    margin-bottom: $sizeRem2;
+    transform: skew(0deg, 3deg);
+    text-align: center;
+    color: #fff;
+  }
+
+  /** Homepage Sction 1 **/
+  .homepageSection1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+    background-color: transparent;
+    position: relative;
+    padding-top: $percent5;
+    padding-bottom: $percent5;
+    z-index: 1;
+
+    h2 {
+      color: $colorMain;
+      text-align: center;
+    }
+    h4 {
+      color: $colorWhite;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .card-no-tab {
+      border-radius: $borderRadius10;
+      background-color: rgba(33, 39, 52, 0.84);
+
+      .card-header {
+        background-color: $colorMain;
+        border-top-left-radius: $marginSize10;
+        border-top-right-radius: $marginSize10;
+        .asset-name {
+          font-size: 12px;
+          color: #ffffff;
+          font-weight: 200;
+        }
+        .asset-price {
+          font-size: 32px;
+          color: #ffffff;
+          font-weight: 800;
+        }
+        .asset-currency {
+          font-size: 14px;
+          color: #ffffff;
+          font-weight: 800;
+          margin-left: 4px;
+        }
+        .asset-changes-up {
+          color: #75e0a2;
+          font-size: 16px;
+        }
+      }
+      .card-body {
+        .list-group a:hover {
+          background-color: transparent;
+          border: 1px solid #353c4a;
+          border-radius: $borderRadius5;
+        }
+
+        .list-transparent {
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: $paddingSize8;
+          border-radius: $borderRadius5;
+        }
+
+        .asset-name {
+          font-weight: $normal-weight;
+          color: $colorWhite;
+          font-size: $fontSize14;
+          margin-left: $marginSize8;
+        }
+
+        .asset-changes-up {
+          color: $colorGreen;
+          font-size: $fontSize14;
+          align-self: flex-end;
+        }
+        .asset-changes-down {
+          color: $colorRed;
+          font-size: $fontSize14;
+          align-self: flex-end;
+        }
+
+        .asset-amount {
+          color: $colorGrey;
+          font-size: $fontSize14;
+          font-weight: $normal-weight;
+          align-self: flex-end;
+        }
+      }
+
+      .card-footer {
+        background-color: transparent !important;
+        padding: $paddingSize14;
+        border: none;
+        text-align: center;
+        align-items: center;
+        a {
+          padding: 0;
+          border: none;
+          text-align: center;
+          font-size: $fontSize12;
+          font-weight: $semibold-weight;
+        }
+        .card-link {
+          justify-content: center;
+          min-height: auto;
+          padding: $paddingSize8;
+        }
+      }
+    }
+  }
+  /** Homepage Section2 **/
+  .homepageSection2 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+    background-color: transparent;
+    margin-top: $percent10;
+    margin-bottom: $percent10;
+    text-align: center;
+
+    h2 {
+      color: $colorMain;
+      text-align: center;
+    }
+    h4 {
+      color: $colorWhite;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .d-flex {
+      width: 100%;
+      text-align: center;
+      img {
+        align-self: center;
+        width: 80px;
+      }
+      h5 {
+        color: $colorWhite;
+        text-align: center;
+        display: inline-block;
+      }
+      span {
+        color: $colorGrey;
+        text-align: center;
+      }
+      b {
+        font-weight: $bold-weight;
+        color: $colorWhite;
+      }
+    }
+  }
+  /*** End of Homepage section2****/
+
+  /*** Homepage Section 6 ***/
+  .homepageSection6 {
+    width: 100%;
+    margin-top: $percent10;
+    margin-bottom: $percent10;
+    text-align: center;
+    h5 {
+      color: $colorWhite;
+    }
+    .card {
+      max-width: 80%;
+      margin: 0 auto;
+      border-radius: 10px;
+      background-color: #1d1d1d;
+      .card-body {
+        margin-left: $percent5;
+        margin-right: $percent5;
+        padding: $percent10;
+        span {
+          color: $colorGrey;
+        }
+        .social-button {
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+          a {
+            text-align: center;
+            padding: 0.2rem;
+            align-self: center;
+            margin: 0 auto;
+            border-radius: 8px;
+
+            svg {
+              max-width: 20px;
+              path {
+                padding: 0.2rem;
+                text-align: center;
+                align-items: center;
+                background-color: $colorMain;
+                fill: #ffffff;
+              }
+            }
+            label {
+              display: none;
+            }
+          }
+          a:hover {
+            border-radius: 8px;
+            background-color: $colorMain;
+            svg path {
+              padding: 0.2rem;
+              text-align: center;
+              align-items: center;
+              background-color: $colorMain;
+              fill: #ffffff;
+            }
+            label {
+              position: absolute;
+              z-index: 2;
+              margin: 0 auto;
+              padding-top: 0.7rem;
+              align-self: center;
+              text-align: center;
+              display: block;
+              color: $colorMain;
+              font-size: $fontSize12;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /** End of Homepage Section 6***/
+
+  /**  Crypto Detail Section 1**/
+
+  .cryptoDetailSection1 {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+    .desc {
+      text-align: center;
+    }
+    img {
+      padding-top: $sizeRem3;
+      padding-bottom: $sizeRem3;
+    }
+  }
+
+  /*** Crupto Detail Section 2 ***/
+  .cryptoDetailSection2 {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+    .desc {
+      text-align: center;
+    }
+    img {
+      padding-top: $sizeRem3;
+      padding-bottom: $sizeRem3;
+    }
+
+    .card {
+      background-color: transparent;
+      border-color: transparent;
+      margin-top: 0rem;
+    }
+  }
+
+  /*** Crypto Detail Section 3 ****/
+  .cryptodetailsection3 {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /*** Crypto Detail Section 4 ****/
+  .cryptoDetailSection4 {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .card {
+      h1 {
+        color: $colorWhite;
+        font-weight: $thin-weight;
+        text-align: center;
+      }
+      h3 {
+        color: $colorWhite;
+        font-size: $fontSize22;
+      }
+    }
+    img {
+      margin-top: $sizeRem2;
+      margin-bottom: $sizeRem5;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      margin-top: $sizeRem2;
+    }
+  }
+
+  /** Crypto Detail Section 5 **/
+  .cryptoDetailSection5 {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .img-container {
+      margin-top: $sizeRem5;
+    }
+  }
+  /** Section Banner **/
+  .cryptoDetailSectionBanner {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h1 {
+      color: $colorMain;
+      font-weight: $light-weight;
+      text-align: center;
+    }
+
+    .title {
+      font-weight: $normal-weight;
+      color: $colorWhite;
+      text-align: center;
+    }
+    .desc {
+      font-weight: $normal-weight;
+      color: $colorGrey;
+      text-align: center;
+    }
+
+    .d-flex {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .img-container {
+      margin-top: $sizeRem5;
+    }
+  }
+
+  /** Particle **/
+  #particles-js {
+    top: 0;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50vh;
+    background-color: #000000;
+    background-image: url("../img/homepage/bg_particles.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+}
+@media (min-width: 768px) {
+}

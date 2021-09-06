@@ -1,0 +1,28 @@
+#particles-js {
+  z-index: -999;
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-height: 800px;
+  background-color: #000000;
+  background-image: url("../../img/homepage/bg_particles.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+}
+
+#stats,
+.count-particles {
+  user-select: none;
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
