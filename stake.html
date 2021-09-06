@@ -890,12 +890,17 @@
 
                 <div class="card card-panel-small" onclick="showModalUnstakeProgress()" data-bs-toggle="modal"
                   data-bs-target="#modalUnstakeProgressList">
+                  <div class="progress">
+                    <div class="progress-bar bg-progress" role="progressbar" style="width: 75%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                   <span
                     class="badge-staking-progress position-absolute top-0 translate-middle badge rounded-pill bg-pink">
                     3
 
                   </span>
                   <div class="card-body">
+
                     <div class="d-flex justify-content-between">
 
                       <div class="d-flex flex-column">
@@ -1213,7 +1218,10 @@
                 <h3 clas="text-style-normal text-color-white py-5">3 Unstaking in on progress</h3>
                 <div
                   class="card card-panel-small mt-5 panel-width align-self-md-center align-self-lg-center align-self-auto">
-
+                  <div class="progress">
+                    <div class="progress-bar bg-progress" role="progressbar" style="width: 75%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
 
@@ -1234,7 +1242,10 @@
                 </div>
                 <div
                   class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
-
+                  <div class="progress">
+                    <div class="progress-bar bg-progress" role="progressbar" style="width: 50%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
 
@@ -1255,7 +1266,10 @@
                 </div>
                 <div
                   class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
-
+                  <div class="progress">
+                    <div class="progress-bar bg-progress" role="progressbar" style="width: 45%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
 
@@ -1323,8 +1337,8 @@
           '<div class="tooltip ' +
           $(this).attr("data-type") +
           '" role="tooltip">' +
-          '	<div class="tooltip-arrow"></div>' +
-          '	<div class="tooltip-inner"></div>' +
+          ' <div class="tooltip-arrow"></div>' +
+          ' <div class="tooltip-inner"></div>' +
           "</div>";
       }
 

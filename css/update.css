@@ -92,6 +92,24 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+  .progress {
+    display: flex;
+    height: 0.5rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+  }
+
+  .progress-bar {
+    border-radius: 16px;
+    background: -webkit-linear-gradient(
+      left,
+      #ff6d87 0%,
+      #8e71f3 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+  }
+
   .card.card-panel-small {
     display: inline-block;
     background-color: #14171f;
@@ -111,16 +129,7 @@
     border: none !important;
     padding: 20px 30px 10px 20px;
   }
-  .card-panel-small .card-body:before {
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(to left, #ff6d87, #8e71f3);
-    top: 0;
-    left: 0;
-    border-top-left-radius: 8px;
-  }
+
   .block-staking-progress span.link-text {
     width: auto;
     margin-right: 2rem;
@@ -176,15 +185,22 @@
   .modal-body .card-panel-small .card-body {
     padding: 0.2rem 0.5rem;
   }
-  .card-panel-small .card-body:before {
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(to left, #ff6d87, #8e71f3);
-    top: 0;
-    left: 0;
-    border-top-left-radius: 8px;
+  .progress {
+    display: flex;
+    height: 0.3rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+  }
+
+  .progress-bar {
+    border-radius: 16px;
+    background: -webkit-linear-gradient(
+      left,
+      #ff6d87 0%,
+      #8e71f3 100%
+    ); /* Chrome10-25,Safari5.1-6 */
   }
   .card-panel-small .badge-staking-progress {
     position: absolute;
