@@ -890,8 +890,8 @@
 
                 <div class="card card-panel-small" onclick="showModalUnstakeProgress()" data-bs-toggle="modal"
                   data-bs-target="#modalUnstakeProgressList">
-                  <div class="progress">
-                    <div class="progress-bar bg-progress" role="progressbar" style="width: 75%" aria-valuenow="25"
+                  <div id="progressBarPanel" class="progress">
+                    <div class="progress-bar bg-progress" role="progressbar" style="width:100%;" aria-valuenow="80"
                       aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <span
@@ -1219,8 +1219,8 @@
                 <div
                   class="card card-panel-small mt-5 panel-width align-self-md-center align-self-lg-center align-self-auto">
                   <div class="progress">
-                    <div class="progress-bar bg-progress" role="progressbar" style="width: 75%" aria-valuenow="25"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="progressBarPanelPop1" class="progress-bar bg-progress" role="progressbar"
+                      style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
@@ -1243,8 +1243,8 @@
                 <div
                   class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
                   <div class="progress">
-                    <div class="progress-bar bg-progress" role="progressbar" style="width: 50%" aria-valuenow="25"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="progressBarPanelPop2" class="progress-bar bg-progress" role="progressbar"
+                      style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
@@ -1267,8 +1267,8 @@
                 <div
                   class="card card-panel-small my-2 panel-width align-self-md-center align-self-lg-center align-self-auto">
                   <div class="progress">
-                    <div class="progress-bar bg-progress" role="progressbar" style="width: 45%" aria-valuenow="25"
-                      aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="progressBarPanelPop1" class="progress-bar bg-progress" role="progressbar"
+                      style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="card-body minW">
                     <div class=" d-flex justify-content-between">
@@ -1314,6 +1314,17 @@
   <script src="js/popper.js"></script>
   <script src="js/trivorigin/bootstrap-triv.js"></script>
   <script>
+
+    var newprogress20 = 20;
+    var newprogress25 = 25;
+    var newprogress50 = 50;
+    var newprogress70 = 70;
+    var newprogress80 = 80;
+    var newprogress100 = 100;
+    $('#progressBarPanel').width(newprogress50 + "%").attr('aria-valuenow', newprogress50);
+    $('#progressBarPanelPop1').width(newprogress20 + "%").attr('aria-valuenow', newprogress20);
+    $('#progressBarPanelPop2').width(newprogress50 + "%").attr('aria-valuenow', newprogress50);
+    $('#progressBarPanelPop3').width(newprogress100 + "%").attr('aria-valuenow', newprogress100);
     function showModal() {
       $("#customTrivFullscreenModal").modal().show(); // you can try comment this code, because bootstrap maybe open modal
     }
@@ -1337,8 +1348,8 @@
           '<div class="tooltip ' +
           $(this).attr("data-type") +
           '" role="tooltip">' +
-          ' <div class="tooltip-arrow"></div>' +
-          ' <div class="tooltip-inner"></div>' +
+          '	<div class="tooltip-arrow"></div>' +
+          '	<div class="tooltip-inner"></div>' +
           "</div>";
       }
 
