@@ -9,871 +9,698 @@
   <meta content="Triv" name="description" />
   <meta content="origin-when-crossorigin" name="referrer" />
 
-
   <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet" />
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" media="all" href="css/trivorigin/bootstrap-triv.css" data-turbolinks-track="reload" />
 
-  <link rel="stylesheet" media="all" href="css/styletriv.css" data-turbolinks-track="reload" />
-  <link href="css/owl.carousel.min.css" rel="stylesheet">
-  <link href="css/owl.theme.default.min.css" rel="stylesheet">
-
-  <style type="text/css">
+  <link rel="stylesheet" media="all" href="scss/styleTriv.css" data-turbolinks-track="reload" />
+  <style>
+    html,
     body {
-      background-color: #333;
-      background-image: url(img/stake_landing/bg_body_effect.svg);
-      background-repeat: no-repeat;
-      color: #ffffff;
-    }
-
-    .panel-group .panel-heading a:after {
-      content: '-';
-      font-size: 20px;
-      float: right;
-      color: #4d5664;
-    }
-
-    .panel-group .panel-heading a.collapsed:after {
-      content: '+';
-      font-size: 20px;
-      color: #4d5664;
+      background-color: #333333;
     }
   </style>
 
 </head>
 
 <body>
+  <!-- Section 1-->
+  <section class="section-area">
+    <div class="container priceDetail1">
+      <h2><img src="img/group-4.svg"> Ethereum Price <span>(ETH)</span></h2>
+      <div class="row row-fluid g-4">
+        <div class="col-lg-8 col-md-8 col-sm-12">
 
-  <div class="triv-content mts-5">
-
-
-    <div class="row justify-content-center">
-
-      <div class="container">
-        <div class="container-centered mts-5">
-
-          <div class="d-flex align-items-center my-4">
-            <img src="img/group-4.svg" width="30">
-            <span class="text-size-30 text-color-main mx-3">Ethereum&nbsp;Price<span
-                class="text-size-20 text-color-grey p-2">(ETH)</span></span>
-          </div>
-
-          <div class="row">
-            <div class="col-md-7 col-sm-12">
-              <div class="bg-triv-dark">
-                <div class="d-flex flex-column bd-highlight mb-3">
-                  <div class="p-2 bd-highlight">
-                    <div class="d-flex justify-content-between"
-                      style="margin-right: 2rem; margin-left: 2rem; margin-top: 2rem;">
-                      <h4 id="lbl1" class="p-2 lbl-chartbox lbl-toggle">Line Chart</h4>
-                      <h4 id="lbl2" class="p-2 lbl-chartbox lbl-toggle" style="display: none;">Candle Chart</h4>
-                      <!-- <div class="btn-group" data-toggle="buttons">
-                          <label class="btn btn-primary image-toggler btn-outline-primary active"
-                            data-image-id="#image1" data-label-id="#lbl1">
-                            <input type="radio" name="options" id="option1"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd"
-                                d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z">
-                              </path>
-                            </svg>
-                          </label>
-                          <label class="btn btn-primary image-toggler btn-outline-primary" data-image-id="#image2"
-                            data-label-id="#lbl2">
-                            <input type="radio" name="options" id="option2"><svg xmlns="http://www.w3.org/2000/svg"
-                              width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line"
-                              viewBox="0 0 16 16">
-                              <path
-                                d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z">
-                              </path>
-                            </svg>
-                          </label>
-                        </div> -->
-
-                      <div class="btn-group btn-group-chart" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-noborder active" for="btnradio1">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-graph-up" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                              d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z">
-                            </path>
-                          </svg>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-noborder" for="btnradio2">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+          <div class="card card-no-tab h-100">
+            <div class="card-body">
+              <div class="d-flex flex-column justify-content-between align-items-center">
+                <div class="d-flex flex-fill justify-content-between w-100">
+                  <div class="d-flex flex-fill flex-column w-50">
+                    <h5>Price Chart</h5>
+                    <h2>Rp 31.001.217<sup><span class="style-grow"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                             <path
-                              d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z">
-                            </path>
-                          </svg>
-                        </label>
+                              d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                          </svg> 3.09%</span></sup></h2>
+                  </div>
 
+                  <div class="d-flex flex-fill flex-column align-items-end w-50">
+                    <div class="btn-group btn-group-chart" role="group" aria-label="Basic radio toggle button group">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                        checked="">
+                      <label class="btn btn-outline-noborder active" for="btnradio1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-graph-up" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z">
+                          </path>
+                        </svg>
+                      </label>
+
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                      <label class="btn btn-outline-noborder" for="btnradio2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                          <path
+                            d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z">
+                          </path>
+                        </svg>
+                      </label>
+
+                    </div>
+                    <div class="">
+                      <div class="id-toogle-chart-nav mts-5">
+
+                        <div class="btn-group d-sm-none d-md-block" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="btn btn-outline-noborder text-size-14">1H</button>
+                          <button type="button" class="btn btn-outline-noborder text-size-14 active">7D</button>
+                          <button type="button" class="btn btn-outline-noborder text-size-14">30D</button>
+                          <button type="button" class="btn btn-outline-noborder text-size-14">1Y</button>
+                          <button type="button" class="btn btn-outline-noborder text-size-14">All</button>
+                        </div>
+                      </div>
+                      <div class="id-toogle-chart-drop d-none d-sm-block d-md-none">
+                        <select class="form-select btn-primary" aria-label="Default select example"
+                          style="margin-top: 2.5rem;">
+                          <option selected="">1H</option>
+                          <option value="1">7D</option>
+                          <option value="2">30D</option>
+                          <option value="3">1Y</option>
+                          <option value="4">All</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="d-flex flex-fill justify-content-between w-100 chart-area">
+                  <img src="img/img-chart-line.png">
+                </div>
+
+
+                <div class="row row-fluid w-100 g-2">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="panel-chart-info">
+                      <div class="d-flex flex-column align-items-md-start align-items-sm-center">
+                        <span>Market Cap <img src="img/ic-info.svg"></span>
+                        <h5>IDR 3.5T</h5>
                       </div>
                     </div>
 
-                    <div class="d-flex justify-content-between"
-                      style="margin-right: 2rem; margin-left: 2rem; margin-top: 2rem;">
-
-                      <div class="p-2 bd-highlight">
-                        <div class="row">
-                          <div class="col-md-8 col-sm-4">
-                            <h2>Rp&nbsp;31.001.217</h2>
-                          </div>
-                          <div class="col-md-4 col-sm-3">
-                            <div class="title-kuadrat"><img src="img/triangle-copy.svg"
-                                class="Triangle-Copy">&nbsp;3.09%</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="">
-                        <div class="id-toogle-chart-nav mts-5">
-                          <!-- <nav class="nav">
-                              <a class="nav-link active" aria-current="page" href="#">1H</a>
-                              <a class="nav-link" href="#">24H</a>
-                              <a class="nav-link" href="#">7D</a>
-                              <a class="nav-link" href="#">30D</a>
-                              <a class="nav-link" href="#">1Y</a>
-                              <a class="nav-link" href="#">All</a>
-                            </nav> -->
-                          <div class="btn-group d-sm-none d-md-block" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-noborder text-size-14">1H</button>
-                            <button type="button" class="btn btn-outline-noborder text-size-14">7D</button>
-                            <button type="button" class="btn btn-outline-noborder text-size-14">30D</button>
-                            <button type="button" class="btn btn-outline-noborder text-size-14">1Y</button>
-                            <button type="button" class="btn btn-outline-noborder text-size-14">All</button>
-                          </div>
-                        </div>
-                        <div class="id-toogle-chart-drop d-none d-sm-block d-md-none">
-                          <select class="form-select btn-primary" aria-label="Default select example"
-                            style="margin-top: 2.5rem;">
-                            <option selected="">1H</option>
-                            <option value="1">7D</option>
-                            <option value="2">30D</option>
-                            <option value="3">1Y</option>
-                            <option value="4">All</option>
-                          </select>
-                        </div>
-
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="panel-chart-info">
+                      <div class=" d-flex flex-column align-items-md-start align-items-sm-center">
+                        <span>Market Cap <img src="img/ic-info.svg"></span>
+                        <h5>IDR 3.5T</h5>
                       </div>
                     </div>
 
-
                   </div>
-                  <div class="p-2 bd-highlight">
-                    <img src="img/img-chart-line.png" id="image1" class="img-fluid image-toggle" width="100%"
-                      style="padding-right: 2rem; padding-left: 2rem; ">
-                    <img src="img/img-chart-candlestick.png" id="image2" class="img-fluid image-toggle" width="100%"
-                      style="padding-right: 2rem; padding-left: 2rem; display: none; ">
-                  </div>
-                  <div class="p-2 bd-highlight">
-                    <div class="row margin-cap">
-                      <div class="col-md-4 col-sm-12 pb-sm-chart">
-
-                        <div class="card bg-triv-darker">
-                          <div class="card-body card-body-market-cap">
-
-
-                            <div class="row">
-                              <div class="col align-self-center">
-                                <p class="market-cap-title">Market&nbsp;cap</p>
-                              </div>
-                              <div class="col">
-                                <img src="img/ic-info.svg" class="market-cap-icon">
-                              </div>
-                              <div class="col">
-                                <p class="market-cap-volume">IDR&nbsp;3.5T</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="col-md-4 col-sm-12 pb-sm-chart">
-
-                        <div class="card bg-triv-darker">
-                          <div class="card-body card-body-market-cap">
-
-
-                            <div class="row">
-                              <div class="col align-self-center">
-                                <p class="market-cap-title">Volume&nbsp;(24h)</p>
-                              </div>
-                              <div class="col">
-                                <img src="img/ic-info.svg" class="market-cap-icon">
-                              </div>
-                              <div class="col">
-                                <p class="market-cap-volume">IDR&nbsp;3.5T</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div class="col-md-4 col-sm-12 pb-sm-chart">
-
-                        <div class="card bg-triv-darker">
-                          <div class="card-body card-body-market-cap">
-
-
-                            <div class="row">
-                              <div class="col align-self-center">
-                                <p class="market-cap-title">Circulating&nbsp;Supply</p>
-                              </div>
-                              <div class="col">
-                                <img src="img/ic-info.svg" class="market-cap-icon">
-                              </div>
-                              <div class="col">
-                                <p class="market-cap-volume">IDR&nbsp;3.0T</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="panel-chart-info">
+                      <div class=" d-flex flex-column align-items-md-start align-items-sm-center">
+                        <span>Market Cap <img src="img/ic-info.svg"></span>
+                        <h5>IDR 3.5T</h5>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
               </div>
 
-              <!-- End of Block Chart -->
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-5 col-sm-12">
-              <!-- Block Calculator-->
-              <form class="background-form-calculator">
-                <div class="d-flex mbs-2">
 
-                  <div class="bd-highlight">
-                    <div class="d-flex flex-column justify-content-center mts-5">
-                      <div class="bd-highlight calculator-title">Price Calculator</div>
-                      <div class="bd-highlight calculator-sub-title">Ethereum</div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+
+          <div class="card card-no-tab h-100">
+            <div class="calculator">
+              <div class="card-body">
+                <div class="d-flex flex-fill flex-column justify-content-center w-100">
+                  <div class="d-flex flex-fill align-items-center justify-content-between w-100">
+                    <div>
+                      <h5>Price Calculator</h5>
+                      <p>Ethereum</p>
                     </div>
-                  </div>
-
-                  <div class="d-flex flex-column bd-highlight ms-auto p-2">
                     <img src="img/group-4.svg">
                   </div>
+                  <div class="d-flex flex-fill flex-column justify-content-between w-100">
+                    <div class="mt-5">
+                      <label for="buying" class="form-label">Your are buying</label>
+                      <div class="d-flex align-items-center background-input-calculator">
+                        <input type="decimal" class="form-control-calculator" id="buying" placeholder="0.00">
+                        <label class="input-right-label-calculator ">ETH</label>
+                      </div>
+                    </div>
 
+                    <div class="mt-4">
+                      <label for="buying" class="form-label">Your will get</label>
+                      <div class="d-flex align-items-center background-input-calculator">
+                        <input type="decimal" class="form-control-calculator" id="buying" placeholder="0.00">
+                        <label class="input-right-label-calculator ">ETH</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex calculator-coin-label flex-fill justify-content-between w-100 mt-2">
+
+                    <span class="align-items-center">Buy Ethereum <img src="img/ic_calculator_pricedetail.svg"></span>
+                    <span class="align-self-end">within minutes. Easy, fast and secure.</span>
+                  </div>
+
+                  <button class="btn btn-primary button-calculator mt-5" type="button">BUY</button>
                 </div>
-                <div class="mt-calculator">
-                  <div class="mb-3">
-                    <label for="buying" class="form-label">Your are buying</label>
-                    <div class="d-flex align-items-center background-input-calculator">
-                      <input type="decimal" class="form-control-calculator" id="buying" placeholder="0.00">
-                      <label class="input-right-label-calculator ">ETH</label>
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="buying" class="form-label">Your will get</label>
-                    <div class="d-flex align-items-center background-input-calculator">
-                      <input type="decimal" class="form-control-calculator" id="buying" placeholder="0.00" disabled="">
-                      <label class="input-right-label-calculator ">IDR</label>
-                    </div>
-                  </div>
-                  <div class="d-flex">
-                    <p class="description-calculator fst-italic">Buy etherum within minutes. Easy, fast, and secure.
-                    </p>
-                  </div>
-                  <div class="d-grid gap-2">
-                    <button class="btn btn-primary button-calculator" type="button">BUY</button>
-                  </div>
-                </div>
-              </form>
-              <!-- End of Block Calculator-->
-
-            </div>
-
-            <!-- Block FAQ-->
-            <div class="col-md-7 col-sm-12">
-              <div class="demo">
-                <div class="row d-flex justify-content-between">
-                  <div class="d-flex bd-highlight mb-2">
-                    <div class=""><img src="img/icons-8-reading.svg" class="icons8-news"></div>
-                    <div class="p-2 bd-highlight mx-4">
-                      <h2>Triv Blog</h2>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-                  <div class="panel-faq panel-default collapse in">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                          aria-expanded="true" aria-controls="collapseOne">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Apa itu Ethereum?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
-                      aria-labelledby="headingOne">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Kenapa harga tiap Ethereum berbeda-beda di Google ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Apa saya perlu beli semua 1 Ethereum ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading " role="tab" id="headingFour">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Bagaimana menukarkan Ethereum ke Rupiah ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingFour">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading " role="tab" id="headingFive">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Berapa harga 1 Ethereum ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingFive">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading " role="tab" id="headingSix">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Bagaimana cara mendapatkan Ethereum ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading " role="tab" id="headingSeven">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Apakah Ethereum lebih baik dibandingkan Bitcoin ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingSeven">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-faq panel-default">
-                    <div class="panel-heading " role="tab" id="headingEight">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                          <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
-                          Apa yang menentukan harga Ethereum ?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
-                      aria-labelledby="headingEight">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid. 3 wolf
-                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                        eiusmod.
-                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                        assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                        raw denim
-                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-
-                </div><!-- panel-group -->
-
-
               </div>
             </div>
-            <!-- End of Block FAQ -->
+          </div>
+        </div>
 
+      </div>
+  </section>
+  <!-- End of section 1-->
 
+  <!-- Section 2-->
+  <section class="section-area">
+    <div class="container priceDetail2">
 
-            <div class="col-md-5 col-sm-12 mt-b-calculator">
-              <!-- Block Invite Friend-->
-              <div class="card bg-triv-dark text-white">
-                <img src="img/bg_invitefriends.png" class="card-img" alt="...">
-                <div class="card-img-overlay pd-card-pricedetail mts-2">
-                  <h4 class="card-title">Invite Friends And Wins</h4>
-                  <p class="card-text card-text-description">You will earn a spin credit. Your friends too!</p>
-                  <a href="" class="mbs-2 custom-link">Invite Friends</a>
-                </div>
-              </div>
-              <!-- End of Block Invite Friend-->
+      <div class="row row-fluid g-4">
 
-              <!-- Block TellUs -->
-              <div class="card bg-triv-dark text-white mts-2">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h2><img src="img/icons-8-reading.svg"> Triv Blog</h2>
 
-                <div class="card-bod pd-card-pricedetail">
-                  <h4 class="card-title">Find Any Mistakes?</h4><br>
-                  <a href="mailto:help@triv.co.id" class="mbs-2 custom-link">Tell us about them</a>
-                </div>
-              </div>
-              <!-- End of BLock TellUs -->
+          <!-- FAQ Accordion-->
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-              <!-- Block Pricelist-->
-              <div class="card bg-triv-dark text-white mts-2">
-
-                <div class="card-body pd-card-pricedetail">
-                  <h4 class="card-title">Similar Crypto</h4>
-                  <p class="card-text card-text-description">Another crypto price available on Triv over the past 24
-                    hours.</p>
-                  <ul class="list-group list-group-flush mts-2">
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3.svg" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Bitcoin</div>
-                            <div class="bd-highlight value-highlight-price">BTC</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 112,973,669.47</div>
-                          <div class="changes-text-similar-up"><img src="img/triangle-copy.svg" class="Triangle-Copy">
-                            3.09%
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy.svg" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Stellar</div>
-                            <div class="bd-highlight value-highlight-price">XLM</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 1,804.27</div>
-                          <div class="changes-text-similar-down"><img src="img/triangle-copy-4.svg"
-                              class="Triangle-Copy"> -3.1%
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy-3.png" srcset="img/similar_crypto/group-3-copy-3@2x.png 2x,
-                       img/similar_crypto/group-3-copy-3@3x.png 3x" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Tether</div>
-                            <div class="bd-highlight value-highlight-price">USDT</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 112,973,669.47</div>
-                          <div class="title-chart"><img src="img/triangle-copy.svg" class="Triangle-Copy"> 3.09%</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy-2.svg" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Dogecoin</div>
-                            <div class="bd-highlight value-highlight-price">DOGE</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 7,342</div>
-                          <div class="changes-text-similar-down"><img src="img/triangle-copy-4.svg"
-                              class="Triangle-Copy">
-                            32.35%</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy.svg" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Stellar</div>
-                            <div class="bd-highlight value-highlight-price">XLM</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 1,804.27</div>
-                          <div class="changes-text-similar-down"><img src="img/triangle-copy-4.svg"
-                              class="Triangle-Copy"> -3.1%
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy-3.png" srcset="img/similar_crypto/group-3-copy-3@2x.png 2x,
-                       img/similar_crypto/group-3-copy-3@3x.png 3x" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Tether</div>
-                            <div class="bd-highlight value-highlight-price">USDT</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 112,973,669.47</div>
-                          <div class="title-chart"><img src="img/triangle-copy.svg" class="Triangle-Copy"> 3.09%</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item-similar">
-                      <div class="d-flex">
-                        <img src="img/similar_crypto/group-3-copy-2.svg" class="Group-3-Copy">
-                        <div class="bd-highlight">
-                          <div class="d-flex flex-column bd-highlight">
-                            <div class="bd-highlight title-highlight-price">Dogecoin</div>
-                            <div class="bd-highlight value-highlight-price">DOGE</div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight ms-auto p-2">
-                          <div class="bd-highlight value-highlight-price">IDR 7,342</div>
-                          <div class="changes-text-similar-down"><img src="img/triangle-copy-4.svg"
-                              class="Triangle-Copy">
-                            32.35%</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item"><a href="" class="similar-link">See More</a></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End of Block Pricelist-->
-            </div>
-
-
-            <!-- News-->
-            <!-- <div class="col-md-12 col-sm-12">
-              <div class="container">
-                <div class="d-flex bd-highlight mb-3">
-                  <div class=""><img src="img/icons-8-news.svg" class="icons8-news"></div>
-                  <div class="p-2 bd-highlight mx-4">
-                    <h4 class="card-title">Crypto&nbsp;News</h4>
-                  </div>
-                  <div class="ms-auto p-2 bd-highlight align-self-center "><a href="#"
-                      class="similar-link-news mt-4">More&nbsp;News</a></div>
-                </div>
-              </div>
-            </div> -->
-
-            <div class="d-flex align-items-center mts-5">
-              <div class="p-2"><img src="img/icons-8-news.svg"></div>
-              <div class="p-2 flex-grow-1">
-                <h4>Crypto&nbsp;News
+            <div class="panel-faq panel-default collapse in">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Apa itu Ethereum?
+                  </a>
                 </h4>
               </div>
-              <div class="p-2"><a href="#" class="similar-link-news mt-4">More&nbsp;News</a></div>
-            </div>
-            <!-- End of News-->
-
-            <!-- News banner-->
-            <div class="col-md-12 col-sm-12">
-              <div class="overflow-scroll">
-                <div class="d-flex bd-highlight">
-                  <div class="p-2 flex-fill bd-highlight">
-                    <div class="card h-100 card-higlight-price">
-                      <img src="img/asphalt-curve-dark-775199.png" srcset="img/asphalt-curve-dark-775199@2x.png 2x,
-                       img/asphalt-curve-dark-775199@3x.png 3x" class="card-img-top">
-                      <a href="#" class="btn btn-primary btn-card-news">Block Chain</a>
-                      <div class="card-body-news">
-                        <h4 class="card-text">Sinyal Blockchain dari Salesforce</h4>
-                        <p class="card-text card-text-description">Salesforce, perusahaan penyedia layanan komputasi
-                          awan (cloud
-                          computing) semakin kepincut dengan kehandalan ..</p>
-                      </div>
-                      <div class="card-footer-news d-flex justify-content-between">
-                        <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
-                        <p>
-                          <a href="#" class="text-decoration-none main-text-color">
-                            Selanjutnya
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                              class="bi bi-chevron-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd"
-                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-                              </path>
-                            </svg>
-                          </a>
-                        </p>
-                        <small class="text-muted">5 min read.</small>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="p-2 flex-fill bd-highlight">
-                    <div class="card h-100 card-higlight-price">
-                      <img src="img/architecture-buildings-city-219692.png" srcset="img/architecture-buildings-city-219692@2x.png 2x,
-                       img/architecture-buildings-city-219692@3x.png 3x" class="card-img-top">
-                      <a href="#" class="btn btn-primary btn-card-news">Ethereum</a>
-                      <div class="card-body-news">
-                        <h4 class="card-text">Hyperledger Gains Microsoft an ..</h4>
-                        <p class="card-text card-text-description">Microsoft already uses Hyperledger Fabric, while
-                          the Ethereum
-                          appearance forms part of a wider outreach plan, say ..</p>
-                      </div>
-                      <div class="card-footer-news d-flex justify-content-between">
-                        <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
-                        <p>
-                          <a href="#" class="text-decoration-none main-text-color">
-                            Selanjutnya
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                              class="bi bi-chevron-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd"
-                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-                              </path>
-                            </svg>
-                          </a>
-                        </p>
-                        <small class="text-muted">3 min read.</small>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="p-2 flex-fill-news bd-highlight">
-                    <div class="card h-100 card-higlight-price">
-                      <img src="img/boy-bright-close-up-792326.png" srcset="img/boy-bright-close-up-792326@2x.png 2x,
-                       img/boy-bright-close-up-792326@3x.png 3x" class="card-img-top">
-                      <a href="#" class="btn btn-primary btn-card-news">Block Chain</a>
-                      <div class="card-body-news">
-                        <h4 class="card-text">Japan Data Initiative Brings Bloc ..</h4>
-                        <p class="card-text card-text-description">Companies including DMG Mori are tipped to join a
-                          data-sharing project that will secure information using blockchain.</p>
-                      </div>
-                      <div class="card-footer-news d-flex justify-content-between">
-                        <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
-                        <p>
-                          <a href="#" class="text-decoration-none main-text-color">
-                            Selanjutnya
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                              class="bi bi-chevron-right" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd"
-                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
-                              </path>
-                            </svg>
-                          </a>
-                        </p>
-                        <small class="text-muted">5 min read.</small>
-                      </div>
-
-                    </div>
-                  </div>
-
-
+              <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
               </div>
             </div>
-            <!-- End of News Banner-->
 
+            <div class="panel-faq panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Kenapa harga tiap Ethereum berbeda-beda di Google ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Apa saya perlu beli semua 1 Ethereum ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading " role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Bagaimana menukarkan Ethereum ke Rupiah ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading " role="tab" id="headingFive">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Berapa harga 1 Ethereum ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading " role="tab" id="headingSix">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                    aria-expanded="false" aria-controls="collapseSix">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Bagaimana cara mendapatkan Ethereum ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading " role="tab" id="headingSeven">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Apakah Ethereum lebih baik dibandingkan Bitcoin ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-faq panel-default">
+              <div class="panel-heading " role="tab" id="headingEight">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <!-- <i class="more-less glyphicon glyphicon-plus"></i> -->
+                    Apa yang menentukan harga Ethereum ?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                  squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                  sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End of FAQ Accordion-->
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 g-4">
+          <div class="card card-no-tab">
+            <img class="banner-in-card" src="img/bg_invitefriends.png">
+            <div class="card-img-overlay">
+              <h4>Invite Friends And Wins</h4>
+              <span>You will earn a spin credit.
+                Your friends too!</span>
+              <a href="#" class="mt-4">Invite Friends</a>
+            </div>
+          </div>
+
+          <div class="card card-no-tab mt-4">
+            <div class="card-body">
+              <h4>Find any mistakes?</h4>
+
+              <a href="#" class="mt-4">Tell us about them</a>
+            </div>
+          </div>
+
+          <div class="card card-no-tab mt-4">
+            <div class="card-body">
+              <h4>Similar Crypto</h4>
+              <span>Another crypto price available on Triv over the past 24 hours.</span>
+
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/group-3-copy.svg">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Bitcoin</span>
+                        <span class="coin-code">BTC</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR 112,973,669.47</span>
+                        <div class="style-gain"><img src="img/triangle-copy.svg">
+                          3.09%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy.svg">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Stellar</span>
+                        <span class="coin-code">XLM</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR 1,804.27</span>
+                        <div class="style-loss"><img src="img/triangle-copy-4.svg">
+                          -3.1%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy-3.png">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Tether</span>
+                        <span class="coin-code">USDT</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR Rp14,623</span>
+                        <div class="style-gain"><img src="img/triangle-copy.svg">
+                          0.21%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy-2.svg">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Dogecoin</span>
+                        <span class="coin-code">DOGE</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR 7,342</span>
+                        <div class="style-loss"><img src="img/triangle-copy-4.svg">
+                          32.35%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy.svg">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Stellar</span>
+                        <span class="coin-code">XLM</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR 1,804.27</span>
+                        <div class="style-loss"><img src="img/triangle-copy-4.svg">
+                          -3.1%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy-3.png">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Tether</span>
+                        <span class="coin-code">USDT</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR Rp14,623</span>
+                        <div class="style-gain"><img src="img/triangle-copy.svg">
+                          0.21%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="d-flex">
+                      <img class="coin" src="img/similar_crypto/group-3-copy-2.svg">
+                      <div class="d-flex flex-column mx-2">
+                        <span class="coin-name">Dogecoin</span>
+                        <span class="coin-code">DOGE</span>
+                      </div>
+                      <div class="d-flex flex-column flex-grow-1 align-items-end">
+                        <span class="coin-volume">IDR 7,342</span>
+                        <div class="style-loss"><img src="img/triangle-copy-4.svg">
+                          32.35%</div>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="card-footer">
+
+              <a href="#" class="text-decoration-none main-text-color">
+                See More
+
+              </a>
+
+            </div>
           </div>
 
         </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End of Section 2-->
+
+  <!-- Section 3-->
+  <section class="section-area">
+    <div class="container priceDetail3">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2><img src="img/icons-8-news.svg">Crypto News</h2>
+        <a href="#">More News</a>
       </div>
 
+      <div class="row row-fluid g-4">
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card card-no-tab">
+            <img src="img/asphalt-curve-dark-775199.png" srcset="img/asphalt-curve-dark-775199@2x.png 2x,
+                                   img/asphalt-curve-dark-775199@3x.png 3x" class="card-img-top">
+            <a href="#" class="btn btn-primary btn-card-news">Block Chain</a>
+            <div class="card-body">
+              <h5>Sinyal Blockchain dari Salesforce</h5>
+              <span>Salesforce, perusahaan penyedia layanan komputasi awan (cloud computing) semakin kepincut dengan
+                kehandalan ..</span>
+
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
+              <p>
+                <a href="#" class="text-decoration-none main-text-color">
+                  Selanjutnya
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                </a>
+              </p>
+              <small class="text-muted">5 min read.</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card card-no-tab">
+            <img src="img/architecture-buildings-city-219692.png" srcset="img/architecture-buildings-city-219692@2x.png 2x,
+                                   img/architecture-buildings-city-219692@3x.png 3x" class="card-img-top">
+            <a href="#" class="btn btn-primary btn-card-news">Ethereum</a>
+            <div class="card-body">
+              <h5>Sinyal Blockchain dari Salesforce</h5>
+              <span>Salesforce, perusahaan penyedia layanan komputasi awan (cloud computing) semakin kepincut dengan
+                kehandalan ..</span>
+
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
+              <p>
+                <a href="#" class="text-decoration-none main-text-color">
+                  Selanjutnya
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                </a>
+              </p>
+              <small class="text-muted">5 min read.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card card-no-tab">
+            <img src="img/boy-bright-close-up-792326.png" srcset="img/boy-bright-close-up-792326@2x.png 2x,
+                                   img/boy-bright-close-up-792326@3x.png 3x" class="card-img-top">
+            <a href="#" class="btn btn-primary btn-card-news">Block Chain</a>
+            <div class="card-body">
+              <h5>Sinyal Blockchain dari Salesforce</h5>
+              <span>Salesforce, perusahaan penyedia layanan komputasi awan (cloud computing) semakin kepincut dengan
+                kehandalan ..</span>
+
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <!-- <a href="price_detail.html" class="btn btn-outline-primary-noborder-news">Selanjutnya <img src="img/fill-1-copy-2.svg"></a> -->
+              <p>
+                <a href="#" class="text-decoration-none main-text-color">
+                  Selanjutnya
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                </a>
+              </p>
+              <small class="text-muted">5 min read.</small>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
 
     </div>
+  </section>
+  <!-- End of Section 3-->
 
 
-
-
-
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-
-
-  <script src="js/trivorigin/application-triv.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/trivorigin/bootstrap-triv.js"></script>
-  <script type="text/javascript">
-    $('.image-toggler').click(function () {
-      $('.image-toggle').hide();
-      $('.lbl-toggle').hide();
-      $($(this).attr('data-image-id')).show();
-      $($(this).attr('data-label-id')).show();
-
-    });
-  </script>
-
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-      "use strict";
-      //  TESTIMONIALS CAROUSEL HOOK
-      $('#customers-testimonials').owlCarousel({
-        loop: true,
-        center: true,
-        items: 4,
-        margin: 0,
-        autoplay: true,
-        dots: true,
-        autoplayTimeout: 8500,
-        smartSpeed: 450,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          },
-          2170: {
-            items: 4
-          }
-
-        }
-      });
-    });
-  </script>
 
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/trivorigin/bootstrap-triv.js"></script>
+<script type="text/javascript">
+  $('.image-toggler').click(function () {
+    $('.image-toggle').hide();
+    $('.lbl-toggle').hide();
+    $($(this).attr('data-image-id')).show();
+    $($(this).attr('data-label-id')).show();
+
+  });
+</script>
